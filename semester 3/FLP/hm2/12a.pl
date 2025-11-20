@@ -1,0 +1,24 @@
+%add_divisors(L,R)
+%L is a list
+%R is the Result
+%flow model (i,o)
+add_divisors([],[]).
+add_divisors([H|T],R):-
+    divisors(H,R1),
+    add_divisors(T,R2),
+    append([H|R1], R2, R).
+%divisors(E,D,R)
+%flow model(i,i,o)
+divisors(E,D,[]):-D>=E.
+divisors(E,D,[D|R]):-
+    0 is E mod D,
+    D1 is D+1,
+    divisors(E,D1,R).
+divisors(E,D,R):-
+    0 =\= E mod D,
+    D1 is D+1,
+    divisors(E,D1,R).
+
+%wrapper
+divisors(E, R) :-
+    divisors(E, 2, R).

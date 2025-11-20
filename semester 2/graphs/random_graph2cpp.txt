@@ -1,0 +1,5 @@
+can not create a graph with 6 vertices and 40 edges
+ if (num_edges > num_vertices * num_vertices) {
+        throw std::invalid_argument("Too many edges for the given number of vertices");
+    }
+instead I generated a graph with 8 vertices and 40 edges(random_graph3.txt)

@@ -1,0 +1,2 @@
+ Buildings to be restored:
+Address: j | Year: 1950 | Total apartments: 80 | Occupied apartments: 78

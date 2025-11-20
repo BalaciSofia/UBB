@@ -1,0 +1,142 @@
+ExeStack:
+[string varf;[varf=test.in;[Open File varf;[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]]]]
+Table:
+Output:
+FileTable:
+ExeStack:
+string varf
+[varf=test.in;[Open File varf;[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]]]
+Table:
+Output:
+FileTable:
+ExeStack:
+[varf=test.in;[Open File varf;[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]]]
+Table:
+varf -> 
+Output:
+FileTable:
+ExeStack:
+varf=test.in
+[Open File varf;[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]]
+Table:
+varf -> 
+Output:
+FileTable:
+ExeStack:
+[Open File varf;[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]]
+Table:
+varf -> test.in
+Output:
+FileTable:
+ExeStack:
+Open File varf
+[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]
+Table:
+varf -> test.in
+Output:
+FileTable:
+ExeStack:
+[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]
+Table:
+varf -> test.in
+Output:
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+int varc
+[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]
+Table:
+varf -> test.in
+Output:
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]
+Table:
+varf -> test.in
+varc -> 0
+Output:
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+Read File varf Variable: varc
+[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]
+Table:
+varf -> test.in
+varc -> 0
+Output:
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]
+Table:
+varf -> test.in
+varc -> 1
+Output:
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+print[varc]
+[Read File varf Variable: varc;[print[varc];Close File varf]]
+Table:
+varf -> test.in
+varc -> 1
+Output:
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+[Read File varf Variable: varc;[print[varc];Close File varf]]
+Table:
+varf -> test.in
+varc -> 1
+Output:
+1
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+Read File varf Variable: varc
+[print[varc];Close File varf]
+Table:
+varf -> test.in
+varc -> 1
+Output:
+1
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+[print[varc];Close File varf]
+Table:
+varf -> test.in
+varc -> 2
+Output:
+1
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+print[varc]
+Close File varf
+Table:
+varf -> test.in
+varc -> 2
+Output:
+1
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+Close File varf
+Table:
+varf -> test.in
+varc -> 2
+Output:
+1
+2
+FileTable:
+test.in -> java.io.BufferedReader@568db2f2
+ExeStack:
+Table:
+varf -> test.in
+varc -> 2
+Output:
+1
+2
+FileTable:

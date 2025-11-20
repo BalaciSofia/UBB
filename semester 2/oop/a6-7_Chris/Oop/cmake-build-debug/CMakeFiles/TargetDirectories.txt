@@ -1,0 +1,3 @@
+C:/Users/balac/OneDrive/Desktop/oop/a6-7_Chris/Oop/cmake-build-debug/CMakeFiles/Oop.dir
+C:/Users/balac/OneDrive/Desktop/oop/a6-7_Chris/Oop/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/balac/OneDrive/Desktop/oop/a6-7_Chris/Oop/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,30 @@
+%se da o lista cu numere intregi pozitive si negative
+%sa se creeze 2 liste
+%una numa cu pozitive alta numa cu negative
+%determinati elementele minima din liste
+
+doualiste([H|T],[H|P],N):-
+    H > 0,
+    doualiste(T,P,N).
+doualiste([H|T],P,[H|N]):-
+    H < 0,
+    doualiste(T,P,N).
+doualiste([],[],[]).
+
+minim([H|T],Acc,R):-
+    H < Acc,
+    Acc1 is H,
+    minim(T,Acc1,R).
+minim([H|T],Acc,R):-
+    H > Acc,
+    minim(T,Acc,R).
+minim([],Acc,Acc).
+
+
+minime([H1|T1],[H2|T2],M1,M2):-
+    minim(T1,H1,M1),
+    minim(T2,H2,M2).
+
+problema(L,R1,R2,R3,R4):-
+    doualiste(L,R1,R2),
+    minime(R1,R2,R3,R4).

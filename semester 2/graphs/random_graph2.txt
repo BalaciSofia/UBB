@@ -1,0 +1,5 @@
+can not create a graph with 6 vertices and 40 edges
+if m>n**2:
+    raise ValueError("m must be smaller than n^2")
+
+instead I generated a graph with 8 vertices and 40 edges(random_graph3.txt)

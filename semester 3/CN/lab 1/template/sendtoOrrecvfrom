@@ -1,0 +1,55 @@
+# recipes_udp_python.py
+import struct
+
+# SENDTO -----------------------------------------------------
+
+def sendto_int(sock, addr, n):
+    packet = struct.pack("!i", n)
+    sock.sendto(packet, addr)
+
+def sendto_float(sock, addr, f):
+    packet = struct.pack("!f", f)
+    sock.sendto(packet, addr)
+
+def sendto_char(sock, addr, ch):
+    sock.sendto(ch.encode(), addr)
+
+def sendto_string(sock, addr, msg):
+    packet = struct.pack("!i", len(msg)) + msg.encode()
+    sock.sendto(packet, addr)
+
+def sendto_array(sock, addr, arr):
+    packet = struct.pack("!i", len(arr))
+    for x in arr:
+        packet += struct.pack("!i", x)
+    sock.sendto(packet, addr)
+
+
+# RECVFROM ----------------------------------------------------
+
+def recvfrom_int(sock):
+    data, addr = sock.recvfrom(4)
+    return struct.unpack("!i", data)[0], addr
+
+def recvfrom_float(sock):
+    data, addr = sock.recvfrom(4)
+    return struct.unpack("!f", data)[0], addr
+
+def recvfrom_char(sock):
+    data, addr = sock.recvfrom(1)
+    return data.decode(), addr
+
+def recvfrom_string(sock):
+    header, addr = sock.recvfrom(4)
+    ln = struct.unpack("!i", header)[0]
+    msg, _ = sock.recvfrom(ln)
+    return msg.decode(), addr
+
+def recvfrom_array(sock):
+    header, addr = sock.recvfrom(4)
+    cnt = struct.unpack("!i", header)[0]
+    arr = []
+    for _ in range(cnt):
+        x, _ = sock.recvfrom(4)
+        arr.append(struct.unpack("!i", x)[0])
+    return arr, addr

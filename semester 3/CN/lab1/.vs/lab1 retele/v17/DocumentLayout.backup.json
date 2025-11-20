@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ALE MELE\\lab1 retele\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58C2DFD8-B871-4E8F-9998-2C028FB526CF}|lab1 retele\\lab1 retele.vcxproj|C:\\ALE MELE\\lab1 retele\\lab1 retele\\lab1 retele.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58C2DFD8-B871-4E8F-9998-2C028FB526CF}|lab1 retele\\lab1 retele.vcxproj|solutionrelative:lab1 retele\\lab1 retele.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "lab1 retele.cpp",
+              "DocumentMoniker": "C:\\ALE MELE\\lab1 retele\\lab1 retele\\lab1 retele.cpp",
+              "RelativeDocumentMoniker": "lab1 retele\\lab1 retele.cpp",
+              "ToolTip": "C:\\ALE MELE\\lab1 retele\\lab1 retele\\lab1 retele.cpp",
+              "RelativeToolTip": "lab1 retele\\lab1 retele.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-06T10:49:03.364Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

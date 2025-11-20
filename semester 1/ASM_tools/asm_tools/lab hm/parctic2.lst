@@ -1,0 +1,102 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit,scanf,fread,printf ,fopen,fclose              ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  import scanf msvcrt.dll
+    11                                  import fread msvcrt.dll
+    12                                  import printf msvcrt.dll
+    13                                  import fopen msvcrt.dll
+    14                                  import fclose msvcrt.dll
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17                                      ; ...
+    18 00000000 00000000                    file_descriptor dd 0
+    19 00000004 637576696E74652E74-         file_name db "cuvinte.txt",0
+    19 0000000D 787400             
+    20 00000010 7200                        access_mode db "r",0
+    21 00000012 00                          text db 0
+    22 00000013 00                          L db 0
+    23 00000014 256400                      format db "%d",0
+    24 00000017 6C656E6768743D00            message db "lenght=",0
+    25                                      count equ 100
+    26                                  ; our code starts here
+    27                                  ;Se da un fisier cuvinte.txt care contine cuvinte separate prin spatii.
+    28                                  ;Sa se determine si sa se afiseze pe ecran numarul de cuvinte care au lungimea (numarul de caractere din fiecare cuvant) mai mica decat o valoare L ;citita de la tasatura, daca lungimea acestora este impara.
+    29                                  
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          ; ...
+    33                                          ;open file
+    34 00000000 68[10000000]                    push dword access_mode
+    35 00000005 68[04000000]                    push dword file_name
+    36 0000000A FF15[00000000]                  call [fopen]
+    37 00000010 83C408                          add esp,4*2
+    38                                          
+    39 00000013 A3[00000000]                    mov dword [file_descriptor],eax
+    40 00000018 83F800                          cmp eax,0
+    41 0000001B 7477                            je final
+    42                                          
+    43                                          ;citire din fisier
+    44 0000001D FF35[00000000]                  push dword [file_descriptor]
+    45 00000023 6A64                            push dword count
+    46 00000025 6A01                            push dword 1
+    47 00000027 68[12000000]                    push dword text
+    48 0000002C 83C410                          add esp,4*4
+    49                                          ;
+    50                                          
+    51                                          ;citire L
+    52 0000002F 68[17000000]                    push dword message
+    53 00000034 FF15[00000000]                  call [printf]
+    54 0000003A 83C404                          add esp,4
+    55                                          
+    56 0000003D 68[13000000]                    push dword L
+    57 00000042 68[14000000]                    push dword format
+    58 00000047 FF15[00000000]                  call [scanf]
+    59 0000004D 83C408                          add esp,8
+    60                                          
+    61                                          
+    62 00000050 BB00000000                      mov ebx,0
+    63 00000055 B900000000                      mov ecx,0
+    64 0000005A BA00000000                      mov edx,0
+    65                                          
+    66                                          search_word:
+    67 0000005F 8A83[12000000]                  mov al,[text+ebx]
+    68 00000065 3C20                            cmp al,32
+    69 00000067 7407                            je word_found
+    70 00000069 3C00                            cmp al,0
+    71 0000006B 7427                            je done
+    72 0000006D 43                              inc ebx
+    73 0000006E EBEF                            jmp search_word
+    74                                          
+    75                                          word_found:
+    76 00000070 89DA                                mov edx, ebx
+    77 00000072 29CA                                sub edx,ecx
+    78 00000074 F7C201000000                        test edx,1
+    79 0000007A 7405                                je lenght_odd
+    80 0000007C 43                                  inc ebx
+    81 0000007D 89D9                                mov ecx,ebx
+    82 0000007F EBDE                                jmp search_word
+    83                                              
+    84                                          lenght_odd:
+    85 00000081 B800000000                          mov eax,0
+    86 00000086 A0[13000000]                        mov al,byte [L]
+    87 0000008B 39D0                                cmp eax,edx
+    88 0000008D 7D05                                jge print_word
+    89 0000008F 43                                  inc ebx
+    90 00000090 89D9                                mov ecx,ebx
+    91 00000092 EBCB                                jmp search_word
+    92                                          
+    93                                          print_word:
+    94                                          ;nu stiu cum
+    95                                              
+    96                                          ;text+ecx->text+ebx
+    97                                          done:
+    98                                          final:
+    99                                          ; exit(0)
+   100 00000094 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   101 00000096 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

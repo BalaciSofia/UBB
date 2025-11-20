@@ -1,0 +1,116 @@
+ExeStack:
+[int v;[v=2;print[v]]]
+Table:
+Output:
+FileTable:
+ExeStack:
+[v=2;print[v]]
+int v
+Table:
+Output:
+FileTable:
+ExeStack:
+int v
+print[v]
+v=2
+Table:
+Output:
+FileTable:
+ExeStack:
+print[v]
+v=2
+Table:
+v -> 0
+Output:
+FileTable:
+ExeStack:
+v=2
+Table:
+v -> 0
+Output:
+0
+FileTable:
+ExeStack:
+Table:
+v -> 2
+Output:
+0
+FileTable:
+ExeStack:
+[int v;[v=2;print[v]]]
+Table:
+Output:
+FileTable:
+ExeStack:
+int v
+[v=2;print[v]]
+Table:
+Output:
+FileTable:
+ExeStack:
+[v=2;print[v]]
+Table:
+v -> 0
+Output:
+FileTable:
+ExeStack:
+v=2
+print[v]
+Table:
+v -> 0
+Output:
+FileTable:
+ExeStack:
+print[v]
+Table:
+v -> 2
+Output:
+FileTable:
+ExeStack:
+Table:
+v -> 2
+Output:
+2
+FileTable:
+ExeStack:
+[int v;[v=2;print[v]]]
+Table:
+Output:
+FileTable:
+ExeStack:
+int v
+[v=2;print[v]]
+Table:
+Output:
+FileTable:
+ExeStack:
+[v=2;print[v]]
+Table:
+v -> 0
+Output:
+FileTable:
+ExeStack:
+v=2
+print[v]
+Table:
+v -> 0
+Output:
+FileTable:
+ExeStack:
+print[v]
+Table:
+v -> 2
+Output:
+FileTable:
+ExeStack:
+Table:
+v -> 2
+Output:
+2
+FileTable:
+ExeStack:
+Table:
+v -> 2
+Output:
+2
+FileTable:

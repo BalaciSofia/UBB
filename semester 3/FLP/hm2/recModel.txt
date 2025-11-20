@@ -1,0 +1,9 @@
+divisors(E,D)=
+{
+[],if D>=E
+D U divisors(E,D+1),if E%D==0
+divisors(E,D+1) otherwise
+}
+
+
+

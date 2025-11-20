@@ -1,0 +1,152 @@
+ExeStack:
+[bool a;[int v;[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]]]
+Table:
+Output:
+FileTable:
+ExeStack:
+[int v;[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]]
+bool a
+Table:
+Output:
+FileTable:
+ExeStack:
+[int v;[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]]
+Table:
+a -> false
+Output:
+FileTable:
+ExeStack:
+[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]
+int v
+Table:
+a -> false
+Output:
+FileTable:
+ExeStack:
+[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]
+Table:
+a -> false
+v -> 0
+Output:
+FileTable:
+ExeStack:
+[IF(a)THEN(v=2)ELSE(v=3);print[v]]
+a=true
+Table:
+a -> false
+v -> 0
+Output:
+FileTable:
+ExeStack:
+[IF(a)THEN(v=2)ELSE(v=3);print[v]]
+Table:
+a -> true
+v -> 0
+Output:
+FileTable:
+ExeStack:
+print[v]
+IF(a)THEN(v=2)ELSE(v=3)
+Table:
+a -> true
+v -> 0
+Output:
+FileTable:
+ExeStack:
+print[v]
+v=2
+Table:
+a -> true
+v -> 0
+Output:
+FileTable:
+ExeStack:
+print[v]
+Table:
+a -> true
+v -> 2
+Output:
+FileTable:
+ExeStack:
+Table:
+a -> true
+v -> 2
+Output:
+2
+FileTable:
+ExeStack:
+[bool a;[int v;[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]]]
+Table:
+Output:
+FileTable:
+ExeStack:
+bool a
+[int v;[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]]
+Table:
+Output:
+FileTable:
+ExeStack:
+[int v;[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]]
+Table:
+a -> false
+Output:
+FileTable:
+ExeStack:
+int v
+[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]
+Table:
+a -> false
+Output:
+FileTable:
+ExeStack:
+[a=true;[IF(a)THEN(v=2)ELSE(v=3);print[v]]]
+Table:
+a -> false
+v -> 0
+Output:
+FileTable:
+ExeStack:
+a=true
+[IF(a)THEN(v=2)ELSE(v=3);print[v]]
+Table:
+a -> false
+v -> 0
+Output:
+FileTable:
+ExeStack:
+[IF(a)THEN(v=2)ELSE(v=3);print[v]]
+Table:
+a -> true
+v -> 0
+Output:
+FileTable:
+ExeStack:
+IF(a)THEN(v=2)ELSE(v=3)
+print[v]
+Table:
+a -> true
+v -> 0
+Output:
+FileTable:
+ExeStack:
+v=2
+print[v]
+Table:
+a -> true
+v -> 0
+Output:
+FileTable:
+ExeStack:
+print[v]
+Table:
+a -> true
+v -> 2
+Output:
+FileTable:
+ExeStack:
+Table:
+a -> true
+v -> 2
+Output:
+2
+FileTable:

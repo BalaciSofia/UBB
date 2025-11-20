@@ -1,0 +1,92 @@
+// c_udp_client.c
+#include <stdio.h>
+#include <string.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+
+int main() {
+    char ip[32];
+    int port;
+
+    printf("Server IP: ");
+    scanf("%31s", ip);
+    printf("Server port: ");
+    scanf("%d", &port);
+
+    int s = socket(AF_INET, SOCK_DGRAM, 0);
+
+    struct sockaddr_in srv;
+    memset(&srv, 0, sizeof(srv));
+    srv.sin_family = AF_INET;
+    srv.sin_port = htons(port);
+    inet_pton(AF_INET, ip, &srv.sin_addr);
+
+    // sending string
+    const char *msg = "Hello from C UDP!";
+    int32_t ln = strlen(msg);
+    int32_t ln_net = htonl(ln);
+    char packet[1060];
+    memcpy(packet, &ln_net, 4);
+    memcpy(packet + 4, msg, ln);
+    sendto(s, packet, 4 + ln, 0, (struct sockaddr*)&srv, sizeof(srv));
+
+    // sending int
+    /*
+    int32_t n = 1234;
+    int32_t n_net = htonl(n);
+    sendto(s, &n_net, 4, 0, (struct sockaddr*)&srv, sizeof(srv));
+    */
+
+    // sending float
+    /*
+    float f = 3.14f;
+    uint32_t f_bits;
+    memcpy(&f_bits, &f, 4);
+    f_bits = htonl(f_bits);
+    sendto(s, &f_bits, 4, 0, (struct sockaddr*)&srv, sizeof(srv));
+    */
+
+    // sending char
+    /*
+    char ch = 'A';
+    sendto(s, &ch, 1, 0, (struct sockaddr*)&srv, sizeof(srv));
+    */
+
+    // sending array of ints
+    /*
+    int32_t arr[] = {10, 20, 30};
+    int32_t count = 3;
+    int32_t count_net = htonl(count);
+    char buf[1024];
+    int offset = 0;
+    memcpy(buf + offset, &count_net, 4);
+    offset += 4;
+    for (int i = 0; i < count; i++) {
+        int32_t x_net = htonl(arr[i]);
+        memcpy(buf + offset, &x_net, 4);
+        offset += 4;
+    }
+    sendto(s, buf, offset, 0, (struct sockaddr*)&srv, sizeof(srv));
+    */
+
+    // receiving string reply
+    char rbuf[1024];
+    socklen_t slen = sizeof(srv);
+    int n = recvfrom(s, rbuf, sizeof(rbuf), 0, (struct sockaddr*)&srv, &slen);
+    if (n >= 4) {
+        int32_t rlen_net;
+        memcpy(&rlen_net, rbuf, 4);
+        int32_t rlen = ntohl(rlen_net);
+        if (rlen > 1019) rlen = 1019;
+        char reply[1024];
+        memcpy(reply, rbuf + 4, rlen);
+        reply[rlen] = 0;
+        printf("Server: %s\n", reply);
+    }
+
+    close(s);
+    return 0;
+}

@@ -1,0 +1,5 @@
+C:/Users/balac/OneDrive/Desktop/oop/practice_final2(microbial)/cmake-build-debug/CMakeFiles/practice_final2_microbial_.dir
+C:/Users/balac/OneDrive/Desktop/oop/practice_final2(microbial)/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/balac/OneDrive/Desktop/oop/practice_final2(microbial)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/balac/OneDrive/Desktop/oop/practice_final2(microbial)/cmake-build-debug/CMakeFiles/practice_final2_microbial__autogen_timestamp_deps.dir
+C:/Users/balac/OneDrive/Desktop/oop/practice_final2(microbial)/cmake-build-debug/CMakeFiles/practice_final2_microbial__autogen.dir

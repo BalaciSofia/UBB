@@ -1,0 +1,82 @@
+// c_tcp_client.c
+#include <stdio.h>
+#include <string.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+
+int main() {
+    char ip[32];
+    int port;
+
+    printf("Server IP: ");
+    scanf("%31s", ip);
+    printf("Server port: ");
+    scanf("%d", &port);
+
+    int s = socket(AF_INET, SOCK_STREAM, 0);
+
+    struct sockaddr_in srv;
+    memset(&srv, 0, sizeof(srv));
+    srv.sin_family = AF_INET;
+    srv.sin_port = htons(port);
+    inet_pton(AF_INET, ip, &srv.sin_addr);
+
+    connect(s, (struct sockaddr*)&srv, sizeof(srv));
+
+    // sending string
+    const char *msg = "Hello from C TCP!";
+    int32_t ln = strlen(msg);
+    int32_t ln_net = htonl(ln);
+    send(s, &ln_net, 4, 0);
+    send(s, msg, ln, 0);
+
+    // sending int
+    /*
+    int32_t n = 1234;
+    int32_t n_net = htonl(n);
+    send(s, &n_net, 4, 0);
+    */
+
+    // sending float (32-bit)
+    /*
+    float f = 3.14f;
+    uint32_t f_bits;
+    memcpy(&f_bits, &f, 4);
+    f_bits = htonl(f_bits);
+    send(s, &f_bits, 4, 0);
+    */
+
+    // sending char
+    /*
+    char ch = 'A';
+    send(s, &ch, 1, 0);
+    */
+
+    // sending array of ints
+    /*
+    int32_t arr[] = {10, 20, 30};
+    int32_t count = 3;
+    int32_t count_net = htonl(count);
+    send(s, &count_net, 4, 0);
+    for (int i = 0; i < count; i++) {
+        int32_t x_net = htonl(arr[i]);
+        send(s, &x_net, 4, 0);
+    }
+    */
+
+    // receiving string
+    int32_t rlen_net;
+    recv(s, &rlen_net, 4, 0);
+    int32_t rlen = ntohl(rlen_net);
+    char buf[1024];
+    if (rlen > 1023) rlen = 1023;
+    recv(s, buf, rlen, 0);
+    buf[rlen] = 0;
+    printf("Server: %s\n", buf);
+
+    close(s);
+    return 0;
+}

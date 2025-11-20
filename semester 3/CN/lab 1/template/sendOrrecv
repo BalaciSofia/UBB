@@ -1,0 +1,40 @@
+import struct
+
+# SEND --------------------------------------------
+
+def send_int(sock, n):
+    sock.send(struct.pack("!i", n))
+
+def send_float(sock, f):
+    sock.send(struct.pack("!f", f))
+
+def send_char(sock, ch):
+    sock.send(ch.encode())
+
+def send_string(sock, msg):
+    sock.send(struct.pack("!i", len(msg)) + msg.encode())
+
+def send_array(sock, arr):
+    sock.send(struct.pack("!i", len(arr)))
+    for x in arr:
+        sock.send(struct.pack("!i", x))
+
+
+# RECEIVE -----------------------------------------
+
+def recv_int(sock):
+    return struct.unpack("!i", sock.recv(4))[0]
+
+def recv_float(sock):
+    return struct.unpack("!f", sock.recv(4))[0]
+
+def recv_char(sock):
+    return sock.recv(1).decode()
+
+def recv_string(sock):
+    ln = struct.unpack("!i", sock.recv(4))[0]
+    return sock.recv(ln).decode()
+
+def recv_array(sock):
+    cnt = struct.unpack("!i", sock.recv(4))[0]
+    return [struct.unpack("!i", sock.recv(4))[0] for _ in range(cnt)]

@@ -1,0 +1,108 @@
+// c_udp_server.c
+#include <stdio.h>
+#include <string.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+
+int main() {
+    char ip[32];
+    int port;
+
+    printf("IP to bind: ");
+    scanf("%31s", ip);
+    printf("Port: ");
+    scanf("%d", &port);
+
+    int s = socket(AF_INET, SOCK_DGRAM, 0);
+
+    struct sockaddr_in srv, cli;
+    memset(&srv, 0, sizeof(srv));
+    srv.sin_family = AF_INET;
+    srv.sin_port = htons(port);
+    inet_pton(AF_INET, ip, &srv.sin_addr);
+
+    bind(s, (struct sockaddr*)&srv, sizeof(srv));
+    printf("UDP server listening on %s %d\n", ip, port);
+
+    while (1) {
+        char buf[1024];
+        socklen_t clen = sizeof(cli);
+        int n = recvfrom(s, buf, sizeof(buf), 0, (struct sockaddr*)&cli, &clen);
+        if (n <= 0) continue;
+
+        // receiving string
+        if (n >= 4) {
+            int32_t ln_net;
+            memcpy(&ln_net, buf, 4);
+            int32_t ln = ntohl(ln_net);
+            if (ln > 1019) ln = 1019;
+            char msg[1024];
+            memcpy(msg, buf + 4, ln);
+            msg[ln] = 0;
+            printf("string: %s\n", msg);
+
+            char reply[1060];
+            snprintf(reply, sizeof(reply), "OK: %s", msg);
+            int32_t rlen = strlen(reply);
+            int32_t rlen_net = htonl(rlen);
+            char out[1064];
+            memcpy(out, &rlen_net, 4);
+            memcpy(out + 4, reply, rlen);
+            sendto(s, out, 4 + rlen, 0, (struct sockaddr*)&cli, clen);
+        }
+
+        // receiving int
+        /*
+        if (n >= 4) {
+            int32_t n_net;
+            memcpy(&n_net, buf, 4);
+            int32_t val = ntohl(n_net);
+            printf("int: %d\n", val);
+        }
+        */
+
+        // receiving float
+        /*
+        if (n >= 4) {
+            uint32_t f_net;
+            memcpy(&f_net, buf, 4);
+            f_net = ntohl(f_net);
+            float f;
+            memcpy(&f, &f_net, 4);
+            printf("float: %f\n", f);
+        }
+        */
+
+        // receiving char
+        /*
+        char ch = buf[0];
+        printf("char: %c\n", ch);
+        */
+
+        // receiving array of ints
+        /*
+        int offset = 0;
+        int32_t count_net;
+        memcpy(&count_net, buf + offset, 4);
+        int32_t count = ntohl(count_net);
+        offset += 4;
+        int32_t arr[256];
+        if (count > 256) count = 256;
+        for (int i = 0; i < count; i++) {
+            int32_t x_net;
+            memcpy(&x_net, buf + offset, 4);
+            offset += 4;
+            arr[i] = ntohl(x_net);
+        }
+        printf("array: ");
+        for (int i = 0; i < count; i++) printf("%d ", arr[i]);
+        printf("\n");
+        */
+    }
+
+    close(s);
+    return 0;
+}

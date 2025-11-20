@@ -1,0 +1,14 @@
+remove(i,i,o)
+remove(Poz,List)={	List(2)...List(n),Poz=1
+			List(1) U remove(Poz-1,List2...List(n)) otherwise
+		  }
+
+substitute(i,i,i,o)
+substitute(IList,Val,SubList)={       [],if IList is empty
+				      SubList U IList(2)...IList(n) U substitute(Ilist()2...IList(n),Val,SubList), IList1=Val
+				      IList1 U substitute(IList(2)...IList(n),Val,SubList) otherwise
+			      }
+
+
+
+			    

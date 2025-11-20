@@ -1,0 +1,267 @@
+-ZOO management-db
+
+at least 10 tables
+
+1 many:many   ingrijitor-habitat?
+2 one:many    habitat- rasa animal? 
+mancare-animale
+
+
+
+
+tables:
+1.species 
+
+specieID //primary key
+name
+classification (mammal,bird,reptile...)
+diet(carnicore,omnivore,herbivore)
+habitatID  // foreigh key
+
+[one species->many animals]
+[one habitat->many species]
+
+2.animals	
+
+animalID //primary key
+name
+age
+gender/sex
+specieID //foreign key
+
+[one species->many animals]
+
+
+3.habitats 
+
+habitatID //primary key
+name
+climate(tropical,dry,polar...)
+size
+
+4.staff 
+
+staffID //primary key
+firstname
+lastname
+role(keeper,vet...)
+
+[many staff<->many habitats]
+
+5.staffhabitat
+
+staffID 
+habitatID
+PRIMARY KEY(composite kay) nush ce i asta??
+
+6.food
+
+foodID //primary key
+name
+quantity
+
+7.visitors 
+
+visitorID //primary key
+firstname
+lastname
+age
+
+8.donations(one:many a visitor can make multiple donations)
+
+donationID //primary key
+amount
+date
+visitorID //foreign key
+
+[one visitor->many donations]
+
+9.store 
+
+productID //primary key
+name
+price
+stock
+
+10.events link to habitat
+
+eventID //primary key
+name
+date
+habitatID //foreign key
+
+[one event->one habitat]
+
+
+
+
+
+
+
+
+
+
+->cica e important primary key si foreign key!
+
+
+
+
+
+
+
+
+
+
+cod:
+
+
+-- 1) Habitats (no FK dependencies)
+
+CREATE TABLE dbo.Habitats (
+    HabitatID INT PRIMARY KEY,
+    Name VARCHAR(100) ,
+    Climate VARCHAR(50) ,        
+    AreaSize DECIMAL(10,2) 
+);
+
+-- 2) Species (each species linked to one habitat)
+
+CREATE TABLE Species (
+    SpeciesID INT PRIMARY KEY,
+    Name VARCHAR(100) ,
+    Classification VARCHAR(50),
+    DietType VARCHAR(50),
+    HabitatID INT,
+    CONSTRAINT FK_Species_Habitat FOREIGN KEY (HabitatID) REFERENCES Habitats(HabitatID)
+);
+
+-- 3) Animals (each animal belongs to one species)
+CREATE TABLE Animals (
+    AnimalID INT  PRIMARY KEY,
+    Name VARCHAR(100),
+    Age INT,
+    Gender VARCHAR(10),
+    SpeciesID INT,
+    CONSTRAINT FK_Animal_Species FOREIGN KEY (SpeciesID) REFERENCES Species(SpeciesID)
+);
+
+-- 4) Staff
+CREATE TABLE Staff (
+    StaffID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Role VARCHAR(50),  
+    HireDate DATE 
+);
+
+-- 5) StaffHabitat (many-to-many: staff <-> habitats)
+CREATE TABLE StaffHabitat (
+    StaffID INT,
+    HabitatID INT,
+    AssignedDate DATE,
+    PRIMARY KEY (StaffID, HabitatID),
+    CONSTRAINT FK_StaffHabitat_Staff FOREIGN KEY (StaffID) REFERENCES Staff(StaffID),
+    CONSTRAINT FK_StaffHabitat_Habitat FOREIGN KEY (HabitatID) REFERENCES Habitats(HabitatID)
+);
+
+-- 6) Food (independent)
+CREATE TABLE Food (
+    FoodID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Type VARCHAR(50),
+    QuantityInStock INT 
+);
+
+
+-- 7) Visitors (independent)
+CREATE TABLE Visitors (
+    VisitorID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT
+);
+
+-- 8) Donations (visitor -> donations) (one visitor can make many donations)
+CREATE TABLE Donations (
+    DonationID INT PRIMARY KEY,
+    VisitorID INT,
+    Amount DECIMAL(10,2),
+    DonationDate DATETIME,
+    Purpose VARCHAR(150),
+    CONSTRAINT FK_Donations_Visitor FOREIGN KEY (VisitorID) REFERENCES Visitors(VisitorID)
+);
+
+-- 9) Shop (independent)
+CREATE TABLE Shop (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(150),
+    Price DECIMAL(10,2),
+    Stock INT 
+);
+
+-- 10) Events (linked to Habitat)
+CREATE TABLE Events (
+    EventID INT PRIMARY KEY,
+    Name VARCHAR(150),
+    Description VARCHAR(300),
+    EventDate DATETIME,
+    HabitatID INT,
+    CONSTRAINT FK_Events_Habitat FOREIGN KEY (HabitatID) REFERENCES Habitats(HabitatID)
+);
+
+
+
+
+
+
+-- Add Habitats
+INSERT INTO dbo.Habitats (Name, Climate, AreaSize)
+VALUES ('Savannah', 'Dry', 1500.00),
+       ('Aviary', 'Tropical', 450.00),
+       ('Aquarium', 'Aquatic', 900.00);
+
+-- Add Species (each linked to a habitat)
+INSERT INTO dbo.Species (Name, Classification, DietType, HabitatID)
+VALUES ('Lion', 'Mammal', 'Carnivore', 1),
+       ('Zebra', 'Mammal', 'Herbivore', 1),
+       ('Parrot', 'Bird', 'Herbivore', 2),
+       ('Clownfish', 'Fish', 'Omnivore', 3);
+
+-- Add Animals
+INSERT INTO dbo.Animals (Name, Age, Gender, SpeciesID)
+VALUES ('Leo', 5, 'Male', 1),
+       ('Stripe', 3, 'Female', 2),
+       ('Polly', 2, 'Female', 3),
+       ('Nemo', 1, 'Male', 4);
+
+-- Add Staff
+INSERT INTO dbo.Staff (FirstName, LastName, Role, HireDate)
+VALUES ('Anna','Smith','Keeper','2021-03-15'),
+       ('Mark','Johnson','Veterinarian','2019-06-01');
+
+-- Assign Staff to Habitats (many-to-many)
+INSERT INTO dbo.StaffHabitat (StaffID, HabitatID)
+VALUES (1,1), (1,2), (2,1);
+
+-- Add Food items
+INSERT INTO dbo.Food (Name, Type, QuantityInStock)
+VALUES ('Beef Chunks','Meat', 200),
+       ('Leafy Mix','Vegetables', 150),
+       ('Fish Pellets','Fish', 300);
+
+-- Add Visitors & Donations
+INSERT INTO dbo.Visitors (FirstName, LastName, Age)
+VALUES ('John','Doe',30), ('Maria','Lopez',28);
+
+INSERT INTO dbo.Donations (VisitorID, Amount, Purpose)
+VALUES (1,50.00,'General Support'), (2,100.00,'Vet Fund');
+
+-- Add Shop items
+INSERT INTO dbo.Shop (ProductName, Price, Stock)
+VALUES ('Zoo T-shirt',19.99,50), ('Stuffed Lion',24.99,25);
+
+-- Add Events (linked to habitats)
+INSERT INTO dbo.Events (Name, Description, EventDate, HabitatID)
+VALUES ('Lion Talk','Keeper talks about lions', '2025-06-01 11:00', 1),
+       ('Bird Feeding Show','Parrot feeding demo', '2025-06-03 14:00', 2);
+
