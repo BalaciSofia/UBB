@@ -4,6 +4,7 @@ import exceptions.DictException;
 import exceptions.InvalidOperator;
 import exceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
+import model.adts.heapADT.MyHeapI;
 import model.types.IntType;
 import model.values.IntValue;
 import model.values.Value;
@@ -18,12 +19,13 @@ public class RelationalExpression implements Expression{
     public RelationalExpression(Expression expression1, Expression expression2, RelationalOp op) {
         this.expression1 = expression1;
         this.expression2 = expression2;
+        this.op = op;
     }
 
     @Override
-    public Value evaluate(MyDictionaryI<String,Value>  table)throws ModelException, DictException {
-        Value v1=expression1.evaluate(table);
-        Value v2=expression2.evaluate(table);
+    public Value evaluate(MyDictionaryI<String,Value>  table, MyHeapI heap)throws ModelException, DictException {
+        Value v1=expression1.evaluate(table,heap);
+        Value v2=expression2.evaluate(table,heap);
         if(!v1.getType().equals(new IntType()) || !v2.getType().equals(new IntType()))
             throw new ModelException("Relational expressions are not compatible(need int)");
         else{
@@ -43,5 +45,9 @@ public class RelationalExpression implements Expression{
             }
             return new BoolValue(result);
         }
+    }
+
+    public String toString(){
+        return "RelationalExpression("+expression1+op.toString()+expression2+')';
     }
 }

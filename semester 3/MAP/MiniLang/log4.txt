@@ -3,18 +3,21 @@ ExeStack:
 Table:
 Output:
 FileTable:
+Heap:
 ExeStack:
 string varf
 [varf=test.in;[Open File varf;[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]]]
 Table:
 Output:
 FileTable:
+Heap:
 ExeStack:
 [varf=test.in;[Open File varf;[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]]]
 Table:
 varf -> 
 Output:
 FileTable:
+Heap:
 ExeStack:
 varf=test.in
 [Open File varf;[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]]
@@ -22,12 +25,14 @@ Table:
 varf -> 
 Output:
 FileTable:
+Heap:
 ExeStack:
 [Open File varf;[int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]]
 Table:
 varf -> test.in
 Output:
 FileTable:
+Heap:
 ExeStack:
 Open File varf
 [int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]
@@ -35,13 +40,15 @@ Table:
 varf -> test.in
 Output:
 FileTable:
+Heap:
 ExeStack:
 [int varc;[Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]]
 Table:
 varf -> test.in
 Output:
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 int varc
 [Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]
@@ -49,7 +56,8 @@ Table:
 varf -> test.in
 Output:
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 [Read File varf Variable: varc;[print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]]
 Table:
@@ -57,7 +65,8 @@ varf -> test.in
 varc -> 0
 Output:
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 Read File varf Variable: varc
 [print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]
@@ -66,7 +75,8 @@ varf -> test.in
 varc -> 0
 Output:
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 [print[varc];[Read File varf Variable: varc;[print[varc];Close File varf]]]
 Table:
@@ -74,7 +84,8 @@ varf -> test.in
 varc -> 1
 Output:
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 print[varc]
 [Read File varf Variable: varc;[print[varc];Close File varf]]
@@ -83,7 +94,8 @@ varf -> test.in
 varc -> 1
 Output:
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 [Read File varf Variable: varc;[print[varc];Close File varf]]
 Table:
@@ -92,7 +104,8 @@ varc -> 1
 Output:
 1
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 Read File varf Variable: varc
 [print[varc];Close File varf]
@@ -102,7 +115,8 @@ varc -> 1
 Output:
 1
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 [print[varc];Close File varf]
 Table:
@@ -111,7 +125,8 @@ varc -> 2
 Output:
 1
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 print[varc]
 Close File varf
@@ -121,7 +136,8 @@ varc -> 2
 Output:
 1
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 Close File varf
 Table:
@@ -131,7 +147,8 @@ Output:
 1
 2
 FileTable:
-test.in -> java.io.BufferedReader@568db2f2
+test.in -> java.io.BufferedReader@7b23ec81
+Heap:
 ExeStack:
 Table:
 varf -> test.in
@@ -140,3 +157,4 @@ Output:
 1
 2
 FileTable:
+Heap:

@@ -2,6 +2,8 @@ package model.adts.dictionaryADT;
 
 import exceptions.DictException;
 
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Set;
 
 public interface MyDictionaryI<K,V>{
@@ -16,4 +18,6 @@ public interface MyDictionaryI<K,V>{
     Set<K> keySet();
     //MyDictionaryI<K,V> clone();
     MyDictionaryI<K,V> deepCopy();
+    HashMap<K,V> getDictionary();
+    Collection<V> values();
 }

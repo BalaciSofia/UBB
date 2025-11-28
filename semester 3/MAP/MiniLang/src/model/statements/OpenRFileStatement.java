@@ -23,7 +23,7 @@ public class OpenRFileStatement implements Statement{
 
     @Override
     public ProgramState execute(ProgramState state)throws ModelException, DictException {
-        Value value = exp.evaluate(state.getTable());
+        Value value = exp.evaluate(state.getTable(),state.getHeap());
         if (value.getType().equals(new StringType())) {
             StringValue file = (StringValue) value;
             if (state.getFileTable().containsKey(file.getValue()))

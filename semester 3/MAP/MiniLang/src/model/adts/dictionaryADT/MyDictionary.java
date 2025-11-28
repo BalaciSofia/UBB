@@ -1,6 +1,7 @@
 package model.adts.dictionaryADT;
 import exceptions.DictException;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Set;
 
@@ -80,4 +81,13 @@ public class MyDictionary<K,V> implements MyDictionaryI<K,V>{
         return newDict;
     }
 
+    @Override
+    public HashMap<K,V> getDictionary(){
+        return this.dictionary;
+    }
+
+    @Override
+    public Collection<V> values(){
+        return this.dictionary.values();
+    }
 }

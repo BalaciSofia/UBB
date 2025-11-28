@@ -28,7 +28,7 @@ public class ReadFileStatement implements Statement{
     public ProgramState execute(ProgramState state)throws ModelException, DictException {
         if(state.getTable().containsKey(varName) &&
         state.getTable().get(varName).getType().equals(new IntType())){
-            Value value = exp.evaluate(state.getTable());
+            Value value = exp.evaluate(state.getTable(),state.getHeap());
             if (value.getType().equals(new StringType())) {
                 StringValue file = (StringValue) value;
                 if(state.getFileTable().containsKey(file.getValue())){

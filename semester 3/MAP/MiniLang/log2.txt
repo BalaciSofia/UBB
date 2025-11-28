@@ -3,86 +3,21 @@ ExeStack:
 Table:
 Output:
 FileTable:
-ExeStack:
-[int b;[a=2+3*5;[b=a+1;print[b]]]]
-int a
-Table:
-Output:
-FileTable:
-ExeStack:
-[int b;[a=2+3*5;[b=a+1;print[b]]]]
-Table:
-a -> 0
-Output:
-FileTable:
-ExeStack:
-[a=2+3*5;[b=a+1;print[b]]]
-int b
-Table:
-a -> 0
-Output:
-FileTable:
-ExeStack:
-[a=2+3*5;[b=a+1;print[b]]]
-Table:
-a -> 0
-b -> 0
-Output:
-FileTable:
-ExeStack:
-[b=a+1;print[b]]
-a=2+3*5
-Table:
-a -> 0
-b -> 0
-Output:
-FileTable:
-ExeStack:
-[b=a+1;print[b]]
-Table:
-a -> 17
-b -> 0
-Output:
-FileTable:
-ExeStack:
-print[b]
-b=a+1
-Table:
-a -> 17
-b -> 0
-Output:
-FileTable:
-ExeStack:
-print[b]
-Table:
-a -> 17
-b -> 18
-Output:
-FileTable:
-ExeStack:
-Table:
-a -> 17
-b -> 18
-Output:
-18
-FileTable:
-ExeStack:
-[int a;[int b;[a=2+3*5;[b=a+1;print[b]]]]]
-Table:
-Output:
-FileTable:
+Heap:
 ExeStack:
 int a
 [int b;[a=2+3*5;[b=a+1;print[b]]]]
 Table:
 Output:
 FileTable:
+Heap:
 ExeStack:
 [int b;[a=2+3*5;[b=a+1;print[b]]]]
 Table:
 a -> 0
 Output:
 FileTable:
+Heap:
 ExeStack:
 int b
 [a=2+3*5;[b=a+1;print[b]]]
@@ -90,6 +25,7 @@ Table:
 a -> 0
 Output:
 FileTable:
+Heap:
 ExeStack:
 [a=2+3*5;[b=a+1;print[b]]]
 Table:
@@ -97,6 +33,7 @@ a -> 0
 b -> 0
 Output:
 FileTable:
+Heap:
 ExeStack:
 a=2+3*5
 [b=a+1;print[b]]
@@ -105,6 +42,7 @@ a -> 0
 b -> 0
 Output:
 FileTable:
+Heap:
 ExeStack:
 [b=a+1;print[b]]
 Table:
@@ -112,6 +50,7 @@ a -> 17
 b -> 0
 Output:
 FileTable:
+Heap:
 ExeStack:
 b=a+1
 print[b]
@@ -120,6 +59,7 @@ a -> 17
 b -> 0
 Output:
 FileTable:
+Heap:
 ExeStack:
 print[b]
 Table:
@@ -127,6 +67,7 @@ a -> 17
 b -> 18
 Output:
 FileTable:
+Heap:
 ExeStack:
 Table:
 a -> 17
@@ -134,3 +75,4 @@ b -> 18
 Output:
 18
 FileTable:
+Heap:

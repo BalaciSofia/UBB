@@ -4,6 +4,7 @@ import exceptions.DictException;
 import exceptions.ModelException;
 import exceptions.VarNotDefined;
 import model.adts.dictionaryADT.MyDictionaryI;
+import model.adts.heapADT.MyHeapI;
 import model.adts.stackADT.MyStackI;
 import model.expressions.Expression;
 import model.ProgramState;
@@ -22,7 +23,8 @@ public class AssignStatement implements Statement{
     public ProgramState execute (ProgramState state) throws ModelException, DictException {
         MyStackI<Statement> stack = state.getStack();
         MyDictionaryI<String, Value> table = state.getTable();
-        Value val=exp.evaluate(table);
+        MyHeapI heap= state.getHeap();
+        Value val=exp.evaluate(table,heap);
         if(table.containsKey(var)){
             if(val.getType().equals(table.get(var).getType())){
                 table.set(var,val);

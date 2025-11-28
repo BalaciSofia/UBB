@@ -5,6 +5,7 @@ import exceptions.InvalidExpression;
 import exceptions.InvalidOperator;
 import exceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
+import model.adts.heapADT.MyHeapI;
 import model.types.BoolType;
 import model.values.BoolValue;
 import model.values.Value;
@@ -15,9 +16,9 @@ public class LogicExpression implements Expression {
     private String op;
 
     @Override
-    public Value evaluate(MyDictionaryI<String,Value> table) throws ModelException, DictException {
-        Value v1 = exp1.evaluate(table);
-        Value v2 = exp2.evaluate(table);
+    public Value evaluate(MyDictionaryI<String,Value> table, MyHeapI heap) throws ModelException, DictException {
+        Value v1 = exp1.evaluate(table,heap);
+        Value v2 = exp2.evaluate(table,heap);
         if(v1.getType().equals(new BoolType())){
             if(v2.getType().equals(new BoolType())){
                 BoolValue i1 = (BoolValue)v1;

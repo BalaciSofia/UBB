@@ -5,6 +5,7 @@ import struct
 def handle_client(conn, addr):
     print("[+] Connected:", addr)
     conn.close()
+    #lalalla
 
 def main():
     ip = input("IP to bind: ")

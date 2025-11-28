@@ -3,6 +3,7 @@ package model.expressions;
 import exceptions.ModelException;
 import exceptions.VarNotDefined;
 import model.adts.dictionaryADT.MyDictionaryI;
+import model.adts.heapADT.MyHeapI;
 import model.values.Value;
 
 public class ValueExpression implements Expression {
@@ -14,7 +15,7 @@ public class ValueExpression implements Expression {
     }
 
     @Override
-    public Value evaluate(MyDictionaryI<String,Value> table)throws ModelException {
+    public Value evaluate(MyDictionaryI<String,Value> table, MyHeapI heap)throws ModelException {
         if(table == null)
             throw new VarNotDefined("Symbol table is null");
         return this.v;

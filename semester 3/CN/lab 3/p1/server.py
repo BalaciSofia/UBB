@@ -3,7 +3,7 @@ import struct
 
 def main():
     #ip = input("IP to bind: ")
-    ip="192.168.1.5"
+    ip="192.168.28.1"
     #port = int(input("Port: "))
     port=1234
     # creating UDP socket

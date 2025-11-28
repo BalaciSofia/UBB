@@ -64,8 +64,10 @@ def main():
                 print(f"\nNew user: {u} @ {ip}:{port}\n> ", end="")
             else:
                 if parts[0] == "USERLEFT":
-                    print("am ajuns aici in client sterg din lista de prieteni si printez ca a iesit")
+                    #print("am ajuns aici in client sterg din lista de prieteni si printez ca a iesit")
                     u = parts[1]
+                    ip = parts[2]
+                    port = int(parts[3])
                     del peers[u]
                     print(f"\nUser left: {u} @ {ip}:{port}\n> ", end="")
                 else:

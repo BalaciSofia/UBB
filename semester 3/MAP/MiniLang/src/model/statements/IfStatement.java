@@ -3,6 +3,7 @@ package model.statements;
 import exceptions.DictException;
 import exceptions.InvalidExpression;
 import model.adts.dictionaryADT.MyDictionaryI;
+import model.adts.heapADT.MyHeapI;
 import model.adts.stackADT.MyStackI;
 import model.expressions.Expression;
 import model.ProgramState;
@@ -31,7 +32,8 @@ public class IfStatement implements Statement{
         //first evaluate exp
         MyStackI<Statement> stack = state.getStack();
         MyDictionaryI<String, Value> table = state.getTable();
-        Value rez = exp.evaluate(table);
+        MyHeapI heap= state.getHeap();
+        Value rez = exp.evaluate(table,heap);
         if(rez.getType().equals(new BoolType())){
             //if true the if false else
             BoolValue rez2 = (BoolValue) rez;
