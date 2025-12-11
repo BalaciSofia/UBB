@@ -7,6 +7,7 @@ import exceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.types.BoolType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
 
@@ -34,6 +35,20 @@ public class LogicExpression implements Expression {
             else throw new InvalidExpression("second expression is not a boolean");
         }
         else throw new InvalidExpression("first expression is not a boolean");
+    }
+
+    @Override
+    public Type typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException {
+        Type typ1, typ2;
+        typ1=exp1.typeCheck(typeEnv);
+        typ2=exp2.typeCheck(typeEnv);
+        if (typ1.equals(new BoolType())){
+            if(typ2.equals(new BoolType())){
+                return new BoolType();
+            }
+            else throw new InvalidExpression("second operand is not a boolean");
+        }
+        else throw new InvalidExpression("first operand is not a boolean");
     }
 
     @Override

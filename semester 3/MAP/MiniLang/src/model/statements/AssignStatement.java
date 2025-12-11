@@ -8,6 +8,7 @@ import model.adts.heapADT.MyHeapI;
 import model.adts.stackADT.MyStackI;
 import model.expressions.Expression;
 import model.ProgramState;
+import model.types.Type;
 import model.values.Value;
 
 public class AssignStatement implements Statement{
@@ -35,6 +36,17 @@ public class AssignStatement implements Statement{
         }
         else throw new VarNotDefined("Variable "+var+" not found");
         return null;
+    }
+
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException {
+        Type varType = typeEnv.get(var);
+        Type expType = exp.typeCheck(typeEnv);
+        if (varType.equals(expType)) {
+            return typeEnv;
+        } else {
+            throw new ModelException("Assignment: right hand side and left hand side have different types ");
+        }
     }
 
     @Override

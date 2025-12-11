@@ -4,6 +4,7 @@ import exceptions.ModelException;
 import exceptions.VarNotDefined;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
+import model.types.Type;
 import model.values.Value;
 
 public class ValueExpression implements Expression {
@@ -19,6 +20,11 @@ public class ValueExpression implements Expression {
         if(table == null)
             throw new VarNotDefined("Symbol table is null");
         return this.v;
+    }
+
+    @Override
+    public Type typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException {
+        return v.getType();
     }
 
     @Override

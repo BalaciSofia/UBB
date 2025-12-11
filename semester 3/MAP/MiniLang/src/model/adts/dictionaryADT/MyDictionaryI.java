@@ -16,7 +16,7 @@ public interface MyDictionaryI<K,V>{
     boolean isEmpty();
     int size();
     Set<K> keySet();
-    //MyDictionaryI<K,V> clone();
+    MyDictionaryI<K,V> clone();
     MyDictionaryI<K,V> deepCopy();
     HashMap<K,V> getDictionary();
     Collection<V> values();

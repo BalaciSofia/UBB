@@ -5,9 +5,11 @@ import exceptions.fileExceptions.FileNotFound;
 import exceptions.fileExceptions.FileOpened;
 import exceptions.ModelException;
 import exceptions.InvalidExpression;
+import model.adts.dictionaryADT.MyDictionaryI;
 import model.expressions.Expression;
 import model.ProgramState;
 import model.types.StringType;
+import model.types.Type;
 import model.values.StringValue;
 import model.values.Value;
 import java.io.BufferedReader;
@@ -41,6 +43,15 @@ public class OpenRFileStatement implements Statement{
         }
         return null;
     }
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String,Type> typeEnv) throws ModelException{
+        Type typeExp = exp.typeCheck(typeEnv);
+        if (!typeExp.equals(new StringType())){
+            throw new ModelException("OpenRFileStatement: expression is not a string");
+        }
+        return typeEnv;
+    }
+
 
     @Override
     public String toString(){

@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Set;
 
-public class MyDictionary<K,V> implements MyDictionaryI<K,V>{
+public class MyDictionary<K,V> implements MyDictionaryI<K,V>, Cloneable {
 
     private HashMap<K,V> dictionary;
 
@@ -89,5 +89,16 @@ public class MyDictionary<K,V> implements MyDictionaryI<K,V>{
     @Override
     public Collection<V> values(){
         return this.dictionary.values();
+    }
+
+    @Override
+    public MyDictionaryI<K,V> clone(){
+        try {
+            MyDictionary<K,V> copy = (MyDictionary<K,V>) super.clone();
+            copy.dictionary = (HashMap<K,V>) this.dictionary.clone(); // shallow copy of map
+            return copy;
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException("Clone not supported", e);
+        }
     }
 }

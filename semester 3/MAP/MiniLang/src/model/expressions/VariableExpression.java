@@ -5,6 +5,7 @@ import exceptions.ModelException;
 import exceptions.VarNotDefined;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
+import model.types.Type;
 import model.values.Value;
 
 public class VariableExpression implements Expression{
@@ -20,6 +21,11 @@ public class VariableExpression implements Expression{
         if(!table.containsKey(variable))
             throw new VarNotDefined("Variable " + variable + " not found");
         return table.get(variable);
+    }
+
+    @Override
+    public Type typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException {
+        return typeEnv.get(variable);
     }
 
     @Override

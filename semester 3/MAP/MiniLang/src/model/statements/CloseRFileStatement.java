@@ -5,9 +5,11 @@ import exceptions.fileExceptions.FileNotFound;
 import exceptions.fileExceptions.FileOpened;
 import exceptions.InvalidExpression;
 import exceptions.ModelException;
+import model.adts.dictionaryADT.MyDictionaryI;
 import model.expressions.Expression;
 import model.ProgramState;
 import model.types.StringType;
+import model.types.Type;
 import model.values.StringValue;
 import model.values.Value;
 
@@ -40,6 +42,15 @@ public class CloseRFileStatement implements Statement{
             throw new InvalidExpression("Expression is not string.");
         }
         return null;
+    }
+
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String,Type> typeEnv) throws ModelException{
+        Type typeExp = exp.typeCheck(typeEnv);
+        if (!typeExp.equals(new StringType())){
+            throw new ModelException("CloseRFileStatement: expression is not a string");
+        }
+        return typeEnv;
     }
 
     @Override

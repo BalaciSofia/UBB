@@ -8,6 +8,7 @@ import model.adts.stackADT.MyStackI;
 import model.expressions.Expression;
 import model.ProgramState;
 import model.types.BoolType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
 import exceptions.ModelException;
@@ -50,5 +51,17 @@ public class IfStatement implements Statement{
             throw new InvalidExpression("Expression form if statement is invalid");
         }
         return null;
+    }
+
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type> typeEnv) throws Exception {
+        Type typeExp = exp.typeCheck(typeEnv);
+        if (typeExp.equals(new BoolType())) {
+            thenStatement.typeCheck(typeEnv.clone());
+            elseStatement.typeCheck(typeEnv.clone());
+            return typeEnv;
+        } else {
+            throw new ModelException("The condition of IF does not have the type bool");
+        }
     }
 }

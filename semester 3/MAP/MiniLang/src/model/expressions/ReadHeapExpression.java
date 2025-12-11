@@ -4,6 +4,8 @@ import exceptions.DictException;
 import exceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
+import model.types.RefType;
+import model.types.Type;
 import model.values.RefValue;
 import model.values.Value;
 
@@ -26,6 +28,17 @@ public class ReadHeapExpression implements Expression{
             throw new ModelException("invalid heap address " + address);
         }
         return heap.read(address);
+    }
+
+    @Override
+    public Type typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException {
+        Type exprType = expr.typeCheck(typeEnv);
+        if (exprType instanceof RefType) {
+            RefType refType = (RefType) exprType;
+            return refType.getInner();
+        } else {
+            throw new ModelException("the rH argument is not a Ref Type");
+        }
     }
 
     @Override

@@ -11,6 +11,7 @@ import model.adts.stackADT.MyStack;
 import model.adts.stackADT.MyStackI;
 import model.ProgramState;
 import model.statements.Statement;
+import model.types.Type;
 import model.values.Value;
 import repository.HardcodedRepo;
 import repository.Repo;
@@ -68,6 +69,12 @@ public class Interpreter {
     }
 
     public Controller createProgram(Statement s,String filename){
+        MyDictionaryI<String, Type> typeEnv = new MyDictionary<>();
+        try {
+            s.typeCheck(typeEnv);   // <-- If this throws, DO NOT EXECUTE PROGRAM
+        } catch (Exception e) {
+            throw new RuntimeException("Typecheck failed for program: " + e.getMessage());
+        }
         MyStackI<Statement> exeStack1 = new MyStack<>();
         MyDictionaryI<String, Value> symTable1 = new MyDictionary<>();
         MyListI<Value> out1 = new MyList<>();

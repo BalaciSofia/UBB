@@ -2,9 +2,11 @@ package model.statements;
 
 import exceptions.DictException;
 import exceptions.ModelException;
+import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.listADT.MyListI;
 import model.expressions.Expression;
 import model.ProgramState;
+import model.types.Type;
 import model.values.Value;
 
 public class PrintStatement implements Statement {
@@ -19,6 +21,12 @@ public class PrintStatement implements Statement {
         MyListI<Value> out =state.getOut();
         out.add(exp.evaluate(state.getTable(),state.getHeap()));
         return null;
+    }
+
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type>typeEnv) throws ModelException{
+        exp.typeCheck(typeEnv);
+        return typeEnv;
     }
 
     @Override

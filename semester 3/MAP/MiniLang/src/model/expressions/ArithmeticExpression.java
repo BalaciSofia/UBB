@@ -7,6 +7,7 @@ import model.adts.heapADT.MyHeapI;
 import model.types.IntType;
 import model.values.IntValue;
 import model.values.Value;
+import model.types.Type;
 
 public class ArithmeticExpression implements Expression{
     private Expression exp1;
@@ -43,6 +44,20 @@ public class ArithmeticExpression implements Expression{
             else throw new InvalidExpression("second expression is not an integer");
         }
         else throw new InvalidExpression("first expression is not an integer");
+    }
+
+    @Override
+    public Type typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException {
+        Type typ1, typ2;
+        typ1=exp1.typeCheck(typeEnv);
+        typ2=exp2.typeCheck(typeEnv);
+        if (typ1.equals(new IntType())){
+            if (typ2.equals(new IntType())){
+                return new IntType();
+            }
+            else throw new InvalidExpression("second operand is not an integer");
+        }
+        else throw new InvalidExpression("first operand is not an integer");
     }
 
     @Override

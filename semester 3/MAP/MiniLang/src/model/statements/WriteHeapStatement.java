@@ -5,8 +5,10 @@ import exceptions.DictException;
 import exceptions.ModelException;
 import exceptions.VarNotDefined;
 import model.ProgramState;
+import model.adts.dictionaryADT.MyDictionaryI;
 import model.expressions.Expression;
 import model.types.RefType;
+import model.types.Type;
 import model.values.RefValue;
 import model.values.Value;
 
@@ -45,6 +47,20 @@ public class WriteHeapStatement implements Statement {
 
         state.getHeap().write(address, newValue);
         return null;
+    }
+
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException {
+        Type varType = typeEnv.get(varName);
+        if (!(varType instanceof RefType)) {
+            throw new ModelException("Variable " + varName + " is not of RefType");
+        }
+        RefType refType = (RefType) varType;
+        Type exprType = expr.typeCheck(typeEnv);
+        if (!exprType.equals(refType.getInner())) {
+            throw new ModelException("Type of expression does not match reference location type");
+        }
+        return typeEnv;
     }
 
     @Override

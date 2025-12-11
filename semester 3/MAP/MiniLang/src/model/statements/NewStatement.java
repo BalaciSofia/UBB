@@ -4,8 +4,10 @@ import exceptions.DictException;
 import exceptions.ModelException;
 import exceptions.VarNotDefined;
 import model.ProgramState;
+import model.adts.dictionaryADT.MyDictionaryI;
 import model.expressions.Expression;
 import model.types.RefType;
+import model.types.Type;
 import model.values.RefValue;
 import model.values.Value;
 
@@ -37,6 +39,16 @@ public class NewStatement implements Statement{
         int addr=state.getHeap().allocate(result);
         state.getTable().set(this.label,new RefValue(addr,refType.getInner()));
         return null;
+    }
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException {
+        Type varType = typeEnv.get(this.label);
+        Type expType = this.exp.typeCheck(typeEnv);
+        if (varType.equals(new RefType(expType))) {
+            return typeEnv;
+        } else {
+            throw new ModelException("NEW statement: right hand side and left hand side have different types ");
+        }
     }
 
     @Override

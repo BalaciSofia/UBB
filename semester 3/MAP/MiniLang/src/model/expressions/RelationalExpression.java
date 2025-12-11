@@ -5,7 +5,9 @@ import exceptions.InvalidOperator;
 import exceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
+import model.types.BoolType;
 import model.types.IntType;
+import model.types.Type;
 import model.values.IntValue;
 import model.values.Value;
 import model.values.BoolValue;
@@ -45,6 +47,17 @@ public class RelationalExpression implements Expression{
             }
             return new BoolValue(result);
         }
+    }
+
+    @Override
+    public Type typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException {
+        Type type1 = expression1.typeCheck(typeEnv);
+        Type type2 = expression2.typeCheck(typeEnv);
+        if (!type1.equals(new IntType()))
+            throw new ModelException("first operand is not an integer");
+        if (!type2.equals(new IntType()))
+            throw new ModelException("second operand is not an integer");
+        return new BoolType();
     }
 
     public String toString(){

@@ -33,4 +33,10 @@ public class VarDeclStatement implements Statement{
         }
         return null;
     }
+
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type> typeEnv) throws ModelException,DictException {
+        typeEnv.add(name,type);
+        return typeEnv;
+    }
 }

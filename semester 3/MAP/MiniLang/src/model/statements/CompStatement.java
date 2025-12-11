@@ -1,7 +1,11 @@
 package model.statements;
 
+import exceptions.DictException;
+import exceptions.ModelException;
+import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.stackADT.MyStackI;
 import model.ProgramState;
+import model.types.Type;
 
 public class CompStatement implements Statement {
     private Statement statement1;
@@ -18,6 +22,11 @@ public class CompStatement implements Statement {
         stack.push(statement2);
         stack.push(statement1);
         return null;
+    }
+
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type> typeEnv) throws Exception {
+        return statement2.typeCheck(statement1.typeCheck(typeEnv));
     }
 
     @Override

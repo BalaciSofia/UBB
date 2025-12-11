@@ -3,9 +3,11 @@ package model.statements;
 import exceptions.DictException;
 import exceptions.ModelException;
 import model.ProgramState;
+import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.stackADT.MyStackI;
 import model.expressions.Expression;
 import model.types.BoolType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
 
@@ -31,6 +33,16 @@ public class WhileStatement implements Statement {
             stack.push(this.instructions);
         }
         return null;
+    }
+
+    @Override
+    public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type> typeEnv) throws Exception {
+        Type condType = cond.typeCheck(typeEnv);
+        if (!condType.equals(new BoolType())) {
+            throw new ModelException("While condition is not a boolean.");
+        }
+        instructions.typeCheck(typeEnv.clone());
+        return typeEnv;
     }
 
     @Override
