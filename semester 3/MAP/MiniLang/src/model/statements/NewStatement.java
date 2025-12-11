@@ -36,7 +36,7 @@ public class NewStatement implements Statement{
 
         int addr=state.getHeap().allocate(result);
         state.getTable().set(this.label,new RefValue(addr,refType.getInner()));
-        return state;
+        return null;
     }
 
     @Override

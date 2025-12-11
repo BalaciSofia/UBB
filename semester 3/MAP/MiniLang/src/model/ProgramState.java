@@ -1,6 +1,8 @@
 package model;
 
+import exceptions.ControllerException;
 import exceptions.DictException;
+import exceptions.ModelException;
 import exceptions.StackException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
@@ -17,6 +19,8 @@ public class ProgramState {
         private final MyListI<Value> output;
         private final MyDictionaryI<String, BufferedReader> fileTable;
         private final MyHeapI heap;
+        private int id;
+        private static int nextId=0;
         //private Statement program;
 
     public ProgramState(MyStackI<Statement> stk, MyDictionaryI<String, Value> symtbl,MyListI<Value> ot,
@@ -26,6 +30,10 @@ public class ProgramState {
         this.output = ot;
         this.fileTable=fileTable;
         this.heap=heap;
+        this.id=getNewId();
+    }
+    public int getNewId(){
+        return ++nextId;
     }
 
     public MyDictionaryI<String,BufferedReader> getFileTable(){
@@ -48,6 +56,18 @@ public class ProgramState {
         return this.heap;
     }
 
+    public boolean isNotCompleted(){
+        return !exeStack.isEmpty();
+    }
+
+    public ProgramState oneStep() throws ModelException, StackException, DictException {
+        if (exeStack.isEmpty())
+            throw new StackException("Program stack is empty");
+        Statement currentStatement = exeStack.pop();
+        return currentStatement.execute(this);
+
+    }
+
     //public Statement getProgram(){
        // return this.program;
     //}
@@ -55,11 +75,12 @@ public class ProgramState {
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append("ExeStack:\n").append(exeStack.toString()).
+        s.append("ID:").append(this.id).append("\n").
+                append("ExeStack:\n").append(exeStack.toString()).
                 append("Table:\n").append(table.toString()).
                 append("Output:\n").append(output.toString()).
                 append("FileTable:\n").append(fileTable.toString()).
-                append("Heap:\n").append(heap.toString());
+                append("Heap:\n").append(heap.toString()).append("\n");
         return s.toString();
     }
 }

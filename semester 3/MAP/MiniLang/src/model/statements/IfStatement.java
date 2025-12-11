@@ -49,6 +49,6 @@ public class IfStatement implements Statement{
         else{
             throw new InvalidExpression("Expression form if statement is invalid");
         }
-        return state;
+        return null;
     }
 }

@@ -39,7 +39,7 @@ public class OpenRFileStatement implements Statement{
         else {
             throw new InvalidExpression("Expression is not string.");
         }
-        return state;
+        return null;
     }
 
     @Override

@@ -34,7 +34,7 @@ public class AssignStatement implements Statement{
             }
         }
         else throw new VarNotDefined("Variable "+var+" not found");
-        return state;
+        return null;
     }
 
     @Override

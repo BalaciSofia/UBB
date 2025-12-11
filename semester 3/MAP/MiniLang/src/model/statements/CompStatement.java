@@ -17,7 +17,7 @@ public class CompStatement implements Statement {
         MyStackI<Statement> stack = state.getStack();
         stack.push(statement2);
         stack.push(statement1);
-        return state;
+        return null;
     }
 
     @Override

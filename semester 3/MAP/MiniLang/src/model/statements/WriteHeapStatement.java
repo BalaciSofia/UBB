@@ -44,7 +44,7 @@ public class WriteHeapStatement implements Statement {
         }
 
         state.getHeap().write(address, newValue);
-        return state;
+        return null;
     }
 
     @Override

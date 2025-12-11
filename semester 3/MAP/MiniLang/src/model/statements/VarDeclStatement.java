@@ -31,6 +31,6 @@ public class VarDeclStatement implements Statement{
         else{
             throw new ModelException("Variable with name "+name+" already declared");
         }
-        return state;
+        return null;
     }
 }

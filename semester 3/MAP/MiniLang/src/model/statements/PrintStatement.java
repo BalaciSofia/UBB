@@ -18,7 +18,7 @@ public class PrintStatement implements Statement {
     public ProgramState execute(ProgramState state)throws ModelException, DictException {
         MyListI<Value> out =state.getOut();
         out.add(exp.evaluate(state.getTable(),state.getHeap()));
-        return state;
+        return null;
     }
 
     @Override

@@ -1,29 +1,40 @@
 package repository;
 
 import model.ProgramState;
+import model.adts.listADT.MyList;
+import model.adts.listADT.MyListI;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Repo implements RepoI {
-    private ProgramState program;
+    private List<ProgramState> programs;
     private String filename;
 
     public Repo(ProgramState program, String filename) {
-        this.program = program;
+        this.programs = new ArrayList<ProgramState>();
+        this.programs.add(program);
         this.filename = filename;
     }
 
     @Override
-    public ProgramState getCurrentProgram() {
-        return this.program;
+    public List<ProgramState> getProgramList() {
+        return this.programs;
     }
 
     @Override
-    public void logProgramState() throws Exception {
+    public void setProgramList(List<ProgramState> programs) {
+        this.programs = programs;
+    }
+
+    @Override
+    public void logProgramState(ProgramState program) throws Exception {
         PrintWriter logFile= new PrintWriter(new BufferedWriter(new FileWriter(filename, true)));
-        logFile.print(this.program.toString());
+        logFile.print(program.toString());
         logFile.close();
     }
+
 }

@@ -55,7 +55,7 @@ public class ReadFileStatement implements Statement{
         else{
             throw new ModelException("Variable "+varName+" not found or invalid type");
         }
-        return state;
+        return null;
     }
 
     @Override

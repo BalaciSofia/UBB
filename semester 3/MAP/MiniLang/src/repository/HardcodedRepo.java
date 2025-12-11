@@ -161,5 +161,12 @@ public class HardcodedRepo {
                                 )
                         )
                 );
+        this.statements[9]=new CompStatement(new VarDeclStatement("v",new IntType()), new CompStatement(new VarDeclStatement("a",new RefType(new IntType())),
+                new CompStatement(new AssignStatement("v",new ValueExpression(new IntValue(10))), new CompStatement(new NewStatement("a", new ValueExpression(new IntValue(22))),
+                        new CompStatement(new ForkStatement(new CompStatement(new WriteHeapStatement("a", new ValueExpression(new IntValue(30))),
+                                new CompStatement(new AssignStatement("v",new ValueExpression(new IntValue(32))), new CompStatement(new PrintStatement(new VariableExpression("v")),
+                                        new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))))))), new CompStatement(new PrintStatement(new VariableExpression("v")),
+                                new PrintStatement(new ReadHeapExpression(new VariableExpression("a")))))))));
+
     }
 }

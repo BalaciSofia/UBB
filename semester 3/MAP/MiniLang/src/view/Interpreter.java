@@ -49,6 +49,9 @@ public class Interpreter {
         Statement ex9 = examples.getStatements(8);
         Controller c9 = this.createProgram(ex9,"log9.txt");
 
+        Statement ex10 = examples.getStatements(9);
+        Controller c10 = this.createProgram(ex10,"log10.txt");
+
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
         menu.addCommand(new RunExampleCommand("1", ex1.toString(), c1));
@@ -60,6 +63,7 @@ public class Interpreter {
         menu.addCommand(new RunExampleCommand("7", ex7.toString(), c7));
         menu.addCommand(new RunExampleCommand("8", ex8.toString(), c8));
         menu.addCommand(new RunExampleCommand("9", ex9.toString(), c9));
+        menu.addCommand(new RunExampleCommand("10", ex10.toString(), c10));
         menu.show();
     }
 
