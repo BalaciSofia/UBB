@@ -95,7 +95,7 @@ public class MyDictionary<K,V> implements MyDictionaryI<K,V>, Cloneable {
     public MyDictionaryI<K,V> clone(){
         try {
             MyDictionary<K,V> copy = (MyDictionary<K,V>) super.clone();
-            copy.dictionary = (HashMap<K,V>) this.dictionary.clone(); // shallow copy of map
+            copy.dictionary = (HashMap<K,V>) this.dictionary.clone();
             return copy;
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException("Clone not supported", e);

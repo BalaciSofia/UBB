@@ -4,6 +4,7 @@ import exceptions.DictException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.values.Value;
 
+import java.util.Arrays;
 import java.util.Map;
 
 public interface MyHeapI {

@@ -32,6 +32,9 @@ public class ProgramState {
         this.heap=heap;
         this.id=getNewId();
     }
+    public int getId(){
+        return this.id;
+    }
     public int getNewId(){
         return ++nextId;
     }

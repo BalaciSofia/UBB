@@ -11,4 +11,6 @@ public interface RepoI {
     public List<ProgramState> getProgramList();
     public void setProgramList(List<ProgramState> programStates);
     void logProgramState(ProgramState program) throws RepoException, Exception;
+    int getProgramsSize();
+    ProgramState getProgramWithId(int index) throws RepoException;
 }

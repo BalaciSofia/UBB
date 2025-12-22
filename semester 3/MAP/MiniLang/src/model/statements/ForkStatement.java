@@ -19,7 +19,7 @@ public class ForkStatement implements Statement{
     public ProgramState execute(ProgramState state){
         MyStackI<Statement> newStack = new MyStack<>();
         newStack.push(statement);
-        ProgramState newProgramState = new ProgramState(newStack,state.getTable().deepCopy(), state.getOut(),state.getFileTable(), state.getHeap());
+        ProgramState newProgramState = new ProgramState(newStack,state.getTable().clone(), state.getOut(),state.getFileTable(), state.getHeap());
         return newProgramState;
     }
 

@@ -1,6 +1,7 @@
 package view;
 
 import controller.Controller;
+import exceptions.ListException;
 import model.adts.dictionaryADT.MyDictionary;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeap;
@@ -22,36 +23,45 @@ import java.io.BufferedReader;
 public class Interpreter {
     public void main(String[] args) {
         HardcodedRepo examples = new HardcodedRepo();
+        Statement ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, ex11;
+        Controller c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11;
 
-        Statement ex1 = examples.getStatements(0);
-        Controller c1 = this.createProgram(ex1,"log1.txt");
+        try {
+            ex1 = examples.getStatements(0);
+            c1 = this.createProgram(ex1,"log1.txt");
 
-        Statement ex2 = examples.getStatements(1);
-        Controller c2 = this.createProgram(ex2,"log2.txt");
+            ex2 = examples.getStatements(1);
+            c2 = this.createProgram(ex2,"log2.txt");
 
-        Statement ex3 = examples.getStatements(2);
-        Controller c3 = this.createProgram(ex3,"log3.txt");
+            ex3 = examples.getStatements(2);
+            c3 = this.createProgram(ex3,"log3.txt");
 
-        Statement ex4 = examples.getStatements(3);
-        Controller c4 = this.createProgram(ex4,"log4.txt");
+            ex4 = examples.getStatements(3);
+            c4 = this.createProgram(ex4,"log4.txt");
 
-        Statement ex5 = examples.getStatements(4);
-        Controller c5 = this.createProgram(ex5,"log5.txt");
+            ex5 = examples.getStatements(4);
+            c5 = this.createProgram(ex5,"log5.txt");
 
-        Statement ex6 = examples.getStatements(5);
-        Controller c6 = this.createProgram(ex6,"log6.txt");
+            ex6 = examples.getStatements(5);
+            c6 = this.createProgram(ex6,"log6.txt");
 
-        Statement ex7 = examples.getStatements(6);
-        Controller c7 = this.createProgram(ex7,"log7.txt");
+            ex7 = examples.getStatements(6);
+            c7 = this.createProgram(ex7,"log7.txt");
 
-        Statement ex8 = examples.getStatements(7);
-        Controller c8 = this.createProgram(ex8,"log8.txt");
+            ex8 = examples.getStatements(7);
+            c8 = this.createProgram(ex8,"log8.txt");
 
-        Statement ex9 = examples.getStatements(8);
-        Controller c9 = this.createProgram(ex9,"log9.txt");
+            ex9 = examples.getStatements(8);
+            c9 = this.createProgram(ex9,"log9.txt");
 
-        Statement ex10 = examples.getStatements(9);
-        Controller c10 = this.createProgram(ex10,"log10.txt");
+            ex10 = examples.getStatements(9);
+            c10 = this.createProgram(ex10,"log10.txt");
+
+            ex11 = examples.getStatements(10);
+            c11 = this.createProgram(ex11,"log11.txt");
+        } catch (ListException e) {
+            throw new RuntimeException(e);
+        }
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
@@ -65,13 +75,14 @@ public class Interpreter {
         menu.addCommand(new RunExampleCommand("8", ex8.toString(), c8));
         menu.addCommand(new RunExampleCommand("9", ex9.toString(), c9));
         menu.addCommand(new RunExampleCommand("10", ex10.toString(), c10));
+        menu.addCommand(new RunExampleCommand("11", ex11.toString(), c11));
         menu.show();
     }
 
     public Controller createProgram(Statement s,String filename){
         MyDictionaryI<String, Type> typeEnv = new MyDictionary<>();
         try {
-            s.typeCheck(typeEnv);   // <-- If this throws, DO NOT EXECUTE PROGRAM
+            s.typeCheck(typeEnv);
         } catch (Exception e) {
             throw new RuntimeException("Typecheck failed for program: " + e.getMessage());
         }

@@ -5,6 +5,8 @@ import model.adts.dictionaryADT.MyDictionary;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.values.Value;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Map;
 
 public class MyHeap implements MyHeapI{
@@ -63,4 +65,5 @@ public class MyHeap implements MyHeapI{
     public Value get(int address){
         return this.heap.get(address);
     }
+
 }

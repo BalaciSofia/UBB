@@ -37,4 +37,18 @@ public class Repo implements RepoI {
         logFile.close();
     }
 
+    @Override
+    public int getProgramsSize() {
+        return this.programs.size();
+    }
+
+    @Override
+    public ProgramState getProgramWithId(int id) {
+        for (ProgramState program : programs) {
+            if (program.getId() == id) {
+                return program;
+            }
+        }
+        return null;
+    }
 }

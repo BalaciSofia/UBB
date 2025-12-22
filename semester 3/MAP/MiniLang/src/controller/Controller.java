@@ -78,6 +78,7 @@ public class Controller {
         }
         state.getHeap().set(newHeap);
     }
+
     public void conservativeGarbageCollector(List<ProgramState> states) throws DictException {
         MyHeapI heap = states.get(0).getHeap();
         List<Integer> reachable = new ArrayList<>();
@@ -114,6 +115,7 @@ public class Controller {
                 newHeap.add(addr, heap.get(addr));
             }
         }
+        heap.set(newHeap);
     }
 
 
@@ -125,7 +127,6 @@ public class Controller {
         programs.forEach(p-> {
             try {
                 repository.logProgramState(p);
-                System.out.println(p.toString());
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -162,10 +163,25 @@ public class Controller {
             this.conservativeGarbageCollector(programList);
             oneStepAllPrograms(programList);
             programList=removeCompletedPrograms(repository.getProgramList());
-
         }
         executor.shutdownNow();
-
         repository.setProgramList(programList);
+    }
+
+    public void oneStepAllProgramsGui(List<ProgramState> programs) throws Exception {
+        executor= Executors.newFixedThreadPool(2);
+        this.conservativeGarbageCollector(programs);
+        this.oneStepAllPrograms(programs);
+        executor.shutdownNow();
+        repository.setProgramList(programs);
+    }
+
+
+    public RepoI getRepository(){
+        return this.repository;
+    }
+
+    public int numberOfPrograms() {
+        return this.repository.getProgramsSize();
     }
 }
