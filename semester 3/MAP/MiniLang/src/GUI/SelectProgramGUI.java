@@ -2,6 +2,7 @@ package GUI;
 
 import controller.Controller;
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
@@ -43,10 +44,15 @@ public class SelectProgramGUI extends Application {
         selectButton.setOnAction(e -> handleSelect(stage));
 
         VBox root = new VBox(10,
-                new Label("Select a program:"),
                 programListView,
                 selectButton
         );
+        root.setPadding(new Insets(10));
+
+        root.setStyle("""
+-fx-accent: pink;
+-fx-focus-color: pink;
+""");
 
         root.setPrefSize(600, 400);
         stage.setTitle("Program Selection");

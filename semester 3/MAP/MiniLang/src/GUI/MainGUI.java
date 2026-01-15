@@ -6,9 +6,11 @@ import exceptions.ModelException;
 import exceptions.StackException;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.ObservableList;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import model.ProgramState;
@@ -64,13 +66,14 @@ public class MainGUI {
         this.symTableView.getColumns().setAll(varNameColumn, varValueColumn);
 
         this.exeStackListView = new ListView<>();
+
+        heapTableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+        symTableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+
     }
 
     public void show() {
         Stage stage = new Stage();
-        HBox root = new HBox(10);
-        VBox left = new VBox(10);
-        VBox right = new VBox(10);
 
         //program states list view selection listener
         programStatesListView.getSelectionModel().selectedItemProperty().addListener((obs, oldId, newId) -> {
@@ -88,28 +91,54 @@ public class MainGUI {
         this.programStatesListView.setItems(programIds);
 
         //run button
-        Button selectButton = new Button("Run one step");
-        selectButton.setOnAction(e -> handleSelect(stage));
+        Button runButton = new Button("Run one step");
+        runButton.setOnAction(e -> handleSelect(stage));
 
-        root.setPrefSize(600, 400);
-        left.getChildren().addAll(
+        //no of program states
+        no_programstates.setEditable(false);
+
+        //boxes for each component
+        VBox heapBox = new VBox(6,new Label("Heap:"), heapTableView);
+        VBox outBox  = new VBox(6,new Label("Output:"), outListView);
+        VBox fileBox = new VBox(6,new Label("File Table:"), fileTableListView);
+        VBox prgBox  = new VBox(6,new Label("Program States:"), programStatesListView);
+        VBox symBox  = new VBox(6,new Label("Symbol Table:"), symTableView);
+        VBox exeBox  = new VBox(6,new Label("Execution Stack:"), exeStackListView);
+
+        //left column
+        VBox left = new VBox(12,
                 no_programstates,
-                new Label("Heap:"),
-                heapTableView,
-                new Label("Output:"),
-                outListView,
-                new Label("File Table:"),
-                fileTableListView,
-                new Label("Program States:"),
-                programStatesListView,
-                selectButton);
-        right.getChildren().addAll(
-                new Label("Symbol Table:"),
-                symTableView,
-                new Label("Execution Stack:"),
-                exeStackListView);
-        root.getChildren().addAll(left, right);
-        stage.setScene(new Scene(root));
+                heapBox,
+                outBox,
+                fileBox,
+                prgBox,
+                runButton
+        );
+        left.setPrefWidth(360);
+
+        //right column
+        VBox right = new VBox(12,
+                symBox,
+                exeBox
+        );
+
+        // Make Execution Stack bigger than Symbol Table (looks nicer)
+        symTableView.setPrefHeight(220);
+        exeStackListView.setPrefHeight(340);
+
+        //main
+        HBox main = new HBox(18, left, right);
+        HBox.setHgrow(right, Priority.ALWAYS);
+
+        //root
+        VBox root = new VBox(12, main);
+        root.setPadding(new Insets(10));
+        root.setStyle("""
+        -fx-accent: pink;
+        -fx-focus-color: pink;
+    """);
+        stage.setTitle("Program Execution");
+        stage.setScene(new Scene(root, 900, 600));
         stage.show();
     }
 
@@ -142,9 +171,6 @@ public class MainGUI {
             }
             this.programStatesListView.setItems(programIds);
         }
-        else{
-            showError("No more program states left!");
-        }
     }
 
     private void showProgramStateDetails(int id) {
@@ -163,13 +189,22 @@ public class MainGUI {
         symTableView.refresh();
 
         // exe stack
-        exeStackListView.getItems().setAll(selected.getStack().toString());
+        exeStackListView.getItems().setAll(
+                selected.getStack().toString()
+                        .replace("[", "")
+                        .replace("]", "")
+                        .split(";")
+        );
         exeStackListView.refresh();
     }
 
 
     public void handleSelect(Stage stage){
         try {
+            if(controller.numberOfPrograms()==0){
+                showError("No more program states left!");
+                return;
+            }
             this.controller.oneStepAllProgramsGui(this.controller.getRepository().getProgramList());
             this.reload();
             List<ProgramState> programs = controller.removeCompletedPrograms(controller.getRepository().getProgramList());
