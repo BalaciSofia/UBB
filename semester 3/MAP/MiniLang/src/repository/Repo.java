@@ -15,7 +15,7 @@ public class Repo implements RepoI {
     private String filename;
 
     public Repo(ProgramState program, String filename) {
-        this.programs = new ArrayList<ProgramState>();
+        this.programs = new ArrayList<>();
         this.programs.add(program);
         this.filename = filename;
     }

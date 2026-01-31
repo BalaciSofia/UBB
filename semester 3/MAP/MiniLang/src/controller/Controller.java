@@ -1,14 +1,10 @@
 package controller;
 
-import exceptions.*;
+import exceptions.adtExceptions.DictException;
 import model.adts.dictionaryADT.MyDictionary;
 import model.adts.dictionaryADT.MyDictionaryI;
-import model.adts.heapADT.MyHeap;
 import model.adts.heapADT.MyHeapI;
-import model.adts.listADT.MyListI;
-import model.adts.stackADT.MyStackI;
 import model.ProgramState;
-import model.statements.Statement;
 import model.values.RefValue;
 import model.values.Value;
 import repository.RepoI;
@@ -118,7 +114,6 @@ public class Controller {
         heap.set(newHeap);
     }
 
-
     public List<ProgramState> removeCompletedPrograms(List<ProgramState> programs){
         return programs.stream().filter(p->p.isNotCompleted()).collect(Collectors.toList());
     }
@@ -176,7 +171,6 @@ public class Controller {
         executor.shutdownNow();
         repository.setProgramList(programs);
     }
-
 
     public RepoI getRepository(){
         return this.repository;

@@ -12,7 +12,7 @@ public class NopStatement implements Statement{
 
     @Override
     public String toString(){
-        return "\n";
+        return "nop";
     }
 
     @Override

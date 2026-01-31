@@ -1,6 +1,6 @@
 package model.adts.stackADT;
 
-import exceptions.StackException;
+import exceptions.adtExceptions.StackException;
 
 public interface MyStackI<T> {
     T pop() throws StackException;

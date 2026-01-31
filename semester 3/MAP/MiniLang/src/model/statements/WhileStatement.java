@@ -1,7 +1,7 @@
 package model.statements;
 
-import exceptions.DictException;
-import exceptions.ModelException;
+import exceptions.adtExceptions.DictException;
+import exceptions.modelExceptions.ModelException;
 import model.ProgramState;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.stackADT.MyStackI;
@@ -24,11 +24,9 @@ public class WhileStatement implements Statement {
     public ProgramState execute(ProgramState state) throws DictException,ModelException{
         MyStackI<Statement> stack = state.getStack();
         Value condValue = cond.evaluate(state.getTable(), state.getHeap());
-        if (!condValue.getType().equals(new BoolType())) {
-            throw new ModelException("While condition is not a boolean.");
-        }
-        boolean cond = ((BoolValue) condValue).getValue();
-        if (cond) {
+        boolean conditionrez = ((BoolValue) condValue).getValue();
+
+        if (conditionrez) {
             stack.push(this);
             stack.push(this.instructions);
         }

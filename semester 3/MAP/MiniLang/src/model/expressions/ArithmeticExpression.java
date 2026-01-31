@@ -1,8 +1,11 @@
 package model.expressions;
 
-import exceptions.*;
+import exceptions.adtExceptions.DictException;
+import exceptions.modelExceptions.DivisionByZero;
+import exceptions.modelExceptions.InvalidExpression;
+import exceptions.modelExceptions.InvalidOperator;
+import exceptions.modelExceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
-import model.adts.heapADT.MyHeap;
 import model.adts.heapADT.MyHeapI;
 import model.types.IntType;
 import model.values.IntValue;
@@ -25,25 +28,19 @@ public class ArithmeticExpression implements Expression{
     public Value evaluate(MyDictionaryI<String,Value> table, MyHeapI heap) throws ModelException, DictException {
         Value v1 = exp1.evaluate(table,heap);
         Value v2 = exp2.evaluate(table,heap);
-        if(v1.getType().equals(new IntType())){
-            if(v2.getType().equals(new IntType())){
-                IntValue i1 = (IntValue)v1;
-                IntValue i2 = (IntValue)v2;
-                int n1=i1.getValue();
-                int n2=i2.getValue();
-                switch(op){
-                    case '+':return new IntValue(n1+n2);
-                    case '-':return new IntValue(n1-n2);
-                    case '*':return new IntValue(n1*n2);
-                    case '/':
-                        if(n2==0) throw new DivisionByZero("division by zero");
-                        else return  new IntValue(n1/n2);
-                        default: throw new InvalidOperator("invalid operator for arithmetic expression");
-                }
-            }
-            else throw new InvalidExpression("second expression is not an integer");
+        IntValue i1 = (IntValue)v1;
+        IntValue i2 = (IntValue)v2;
+        int n1=i1.getValue();
+        int n2=i2.getValue();
+        switch(op){
+            case '+':return new IntValue(n1+n2);
+            case '-':return new IntValue(n1-n2);
+            case '*':return new IntValue(n1*n2);
+            case '/':
+                if(n2==0) throw new DivisionByZero("division by zero");
+                else return  new IntValue(n1/n2);
+                default: throw new InvalidOperator("invalid operator for arithmetic expression");
         }
-        else throw new InvalidExpression("first expression is not an integer");
     }
 
     @Override
@@ -51,6 +48,8 @@ public class ArithmeticExpression implements Expression{
         Type typ1, typ2;
         typ1=exp1.typeCheck(typeEnv);
         typ2=exp2.typeCheck(typeEnv);
+        if (op != '+' && op != '-' && op != '*' && op != '/')
+            throw new InvalidOperator("invalid operator for arithmetic expression");
         if (typ1.equals(new IntType())){
             if (typ2.equals(new IntType())){
                 return new IntType();

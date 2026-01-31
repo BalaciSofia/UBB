@@ -1,9 +1,9 @@
 package model.expressions;
 
-import exceptions.DictException;
-import exceptions.InvalidExpression;
-import exceptions.InvalidOperator;
-import exceptions.ModelException;
+import exceptions.adtExceptions.DictException;
+import exceptions.modelExceptions.InvalidExpression;
+import exceptions.modelExceptions.InvalidOperator;
+import exceptions.modelExceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.types.BoolType;
@@ -18,23 +18,15 @@ public class LogicExpression implements Expression {
 
     @Override
     public Value evaluate(MyDictionaryI<String,Value> table, MyHeapI heap) throws ModelException, DictException {
-        Value v1 = exp1.evaluate(table,heap);
-        Value v2 = exp2.evaluate(table,heap);
-        if(v1.getType().equals(new BoolType())){
-            if(v2.getType().equals(new BoolType())){
-                BoolValue i1 = (BoolValue)v1;
-                BoolValue i2 = (BoolValue)v2;
-                boolean n1=i1.getValue();
-                boolean n2=i2.getValue();
-                switch(op){
-                    case "and":return new BoolValue(n1 && n2);
-                    case "or":return new BoolValue(n1 || n2);
-                    default:throw new InvalidOperator("invalid operator");
-                }
-            }
-            else throw new InvalidExpression("second expression is not a boolean");
+        BoolValue v1 = (BoolValue)exp1.evaluate(table,heap);
+        BoolValue v2 = (BoolValue) exp2.evaluate(table,heap);
+        boolean n1=v1.getValue();
+        boolean n2=v2.getValue();
+        switch(op){
+            case "and":return new BoolValue(n1 && n2);
+            case "or":return new BoolValue(n1 || n2);
+            default:throw new InvalidOperator("invalid operator");
         }
-        else throw new InvalidExpression("first expression is not a boolean");
     }
 
     @Override

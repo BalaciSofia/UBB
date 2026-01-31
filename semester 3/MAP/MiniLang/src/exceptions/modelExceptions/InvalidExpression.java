@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.modelExceptions;
 
 public class InvalidExpression extends ModelException {
     public InvalidExpression(String message) {

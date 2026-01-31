@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.adtExceptions;
 
 public class DictException extends Exception {
     public DictException(String message) {

@@ -1,12 +1,10 @@
 package model.adts.heapADT;
 
-import exceptions.DictException;
+import exceptions.adtExceptions.DictException;
 import model.adts.dictionaryADT.MyDictionary;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.values.Value;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Map;
 
 public class MyHeap implements MyHeapI{

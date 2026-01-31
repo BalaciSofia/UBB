@@ -1,5 +1,5 @@
 package model.adts.stackADT;
-import exceptions.StackException;
+import exceptions.adtExceptions.StackException;
 
 import java.util.ArrayList;
 import java.util.List;

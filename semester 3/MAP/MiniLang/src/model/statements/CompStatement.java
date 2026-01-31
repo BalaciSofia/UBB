@@ -1,7 +1,5 @@
 package model.statements;
 
-import exceptions.DictException;
-import exceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.stackADT.MyStackI;
 import model.ProgramState;

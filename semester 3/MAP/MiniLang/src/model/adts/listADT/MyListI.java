@@ -1,6 +1,6 @@
 package model.adts.listADT;
 
-import exceptions.ListException;
+import exceptions.adtExceptions.ListException;
 
 import java.util.List;
 

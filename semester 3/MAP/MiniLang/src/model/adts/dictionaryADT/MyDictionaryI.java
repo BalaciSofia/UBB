@@ -1,6 +1,6 @@
 package model.adts.dictionaryADT;
 
-import exceptions.DictException;
+import exceptions.adtExceptions.DictException;
 
 import java.util.Collection;
 import java.util.HashMap;

@@ -1,7 +1,7 @@
 package model.expressions;
 
-import exceptions.ModelException;
-import exceptions.VarNotDefined;
+import exceptions.modelExceptions.ModelException;
+import exceptions.modelExceptions.VarNotDefined;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.types.Type;

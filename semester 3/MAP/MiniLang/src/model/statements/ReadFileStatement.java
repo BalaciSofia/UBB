@@ -1,10 +1,10 @@
 package model.statements;
 
-import exceptions.DictException;
+import exceptions.adtExceptions.DictException;
 import exceptions.fileExceptions.FileNotFound;
 import exceptions.fileExceptions.FileReadingFail;
-import exceptions.InvalidExpression;
-import exceptions.ModelException;
+import exceptions.modelExceptions.InvalidExpression;
+import exceptions.modelExceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.expressions.Expression;
 import model.ProgramState;

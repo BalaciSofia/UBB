@@ -1,8 +1,8 @@
 package model.expressions;
 
-import exceptions.DictException;
-import exceptions.InvalidOperator;
-import exceptions.ModelException;
+import exceptions.adtExceptions.DictException;
+import exceptions.modelExceptions.InvalidOperator;
+import exceptions.modelExceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.types.BoolType;
@@ -26,27 +26,21 @@ public class RelationalExpression implements Expression{
 
     @Override
     public Value evaluate(MyDictionaryI<String,Value>  table, MyHeapI heap)throws ModelException, DictException {
-        Value v1=expression1.evaluate(table,heap);
-        Value v2=expression2.evaluate(table,heap);
-        if(!v1.getType().equals(new IntType()) || !v2.getType().equals(new IntType()))
-            throw new ModelException("Relational expressions are not compatible(need int)");
-        else{
-            IntValue i1 = (IntValue)v1;
-            IntValue i2 = (IntValue)v2;
-            int n1=i1.getValue();
-            int n2=i2.getValue();
-            boolean result;
-            switch (op) {
-                case EQUAL:result=n1==n2;break;
-                case NOTEQUAL:result=n1!=n2;break;
-                case GT:result=n1>n2;break;
-                case GTEQUAL:result=n1<n2;break;
-                case LT:result=n1>=n2;break;
-                case LTEQUAL:result=n1<=n2;break;
-                default:throw new InvalidOperator("invalid operator for relational expression");
-            }
-            return new BoolValue(result);
+        IntValue i1 = (IntValue)expression1.evaluate(table,heap);
+        IntValue i2 = (IntValue)expression2.evaluate(table,heap);
+        int n1=i1.getValue();
+        int n2=i2.getValue();
+        boolean result;
+        switch (op) {
+            case EQUAL:result=n1==n2;break;
+            case NOTEQUAL:result=n1!=n2;break;
+            case GT:result=n1>n2;break;
+            case GTEQUAL:result=n1<n2;break;
+            case LT:result=n1<n2;break;
+            case LTEQUAL:result=n1<=n2;break;
+            default:throw new InvalidOperator("invalid operator for relational expression");
         }
+        return new BoolValue(result);
     }
 
     @Override
@@ -61,6 +55,6 @@ public class RelationalExpression implements Expression{
     }
 
     public String toString(){
-        return "RelationalExpression("+expression1+op.toString()+expression2+')';
+        return "("+expression1+op.toString()+expression2+')';
     }
 }

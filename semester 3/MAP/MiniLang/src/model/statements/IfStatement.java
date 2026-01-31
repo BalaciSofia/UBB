@@ -1,7 +1,7 @@
 package model.statements;
 
-import exceptions.DictException;
-import exceptions.InvalidExpression;
+import exceptions.adtExceptions.DictException;
+import exceptions.modelExceptions.InvalidExpression;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.adts.stackADT.MyStackI;
@@ -11,7 +11,7 @@ import model.types.BoolType;
 import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
-import exceptions.ModelException;
+import exceptions.modelExceptions.ModelException;
 
 public class IfStatement implements Statement{
     private Expression exp;

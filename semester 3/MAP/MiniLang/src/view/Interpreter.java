@@ -1,7 +1,7 @@
 package view;
 
 import controller.Controller;
-import exceptions.ListException;
+import exceptions.adtExceptions.ListException;
 import model.adts.dictionaryADT.MyDictionary;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeap;

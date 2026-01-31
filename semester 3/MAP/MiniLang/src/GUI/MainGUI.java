@@ -1,9 +1,6 @@
 package GUI;
 
 import controller.Controller;
-import exceptions.DictException;
-import exceptions.ModelException;
-import exceptions.StackException;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -17,8 +14,6 @@ import model.ProgramState;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.adts.listADT.MyListI;
-import model.adts.stackADT.MyStackI;
-import model.statements.Statement;
 import model.values.Value;
 
 import java.io.BufferedReader;
@@ -27,7 +22,6 @@ import java.util.List;
 import java.util.Map;
 
 import static javafx.collections.FXCollections.observableArrayList;
-import static javafx.collections.FXCollections.observableMap;
 
 
 public class MainGUI {

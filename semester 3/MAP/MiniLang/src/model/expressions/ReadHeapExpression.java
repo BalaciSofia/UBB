@@ -1,7 +1,7 @@
 package model.expressions;
 
-import exceptions.DictException;
-import exceptions.ModelException;
+import exceptions.adtExceptions.DictException;
+import exceptions.modelExceptions.ModelException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.types.RefType;
@@ -19,9 +19,6 @@ public class ReadHeapExpression implements Expression{
     @Override
     public Value evaluate(MyDictionaryI<String, Value> table, MyHeapI heap) throws ModelException, DictException {
         Value exprValue = expr.evaluate(table, heap);
-        if (!(exprValue instanceof RefValue)) {
-            throw new ModelException("Expression is not a reference.");
-        }
         RefValue refValue = (RefValue) exprValue;
         int address = refValue.getAddress();
         if (!heap.getHeap().containsKey(address)) {
@@ -37,7 +34,7 @@ public class ReadHeapExpression implements Expression{
             RefType refType = (RefType) exprType;
             return refType.getInner();
         } else {
-            throw new ModelException("the rH argument is not a Ref Type");
+            throw new ModelException("Expression is not a reference.");
         }
     }
 

@@ -1,9 +1,8 @@
 package model;
 
-import exceptions.ControllerException;
-import exceptions.DictException;
-import exceptions.ModelException;
-import exceptions.StackException;
+import exceptions.adtExceptions.DictException;
+import exceptions.modelExceptions.ModelException;
+import exceptions.adtExceptions.StackException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.adts.listADT.MyListI;
@@ -21,7 +20,6 @@ public class ProgramState {
         private final MyHeapI heap;
         private int id;
         private static int nextId=0;
-        //private Statement program;
 
     public ProgramState(MyStackI<Statement> stk, MyDictionaryI<String, Value> symtbl,MyListI<Value> ot,
                         MyDictionaryI<String, BufferedReader> fileTable, MyHeapI heap){
@@ -38,23 +36,18 @@ public class ProgramState {
     public int getNewId(){
         return ++nextId;
     }
-
     public MyDictionaryI<String,BufferedReader> getFileTable(){
         return this.fileTable;
     }
-
     public MyStackI<Statement> getStack(){
         return this.exeStack;
     }
-
     public MyDictionaryI<String, Value> getTable(){
         return this.table;
     }
-
     public MyListI<Value> getOut(){
         return this.output;
     }
-
     public MyHeapI getHeap(){
         return this.heap;
     }
@@ -68,12 +61,7 @@ public class ProgramState {
             throw new StackException("Program stack is empty");
         Statement currentStatement = exeStack.pop();
         return currentStatement.execute(this);
-
     }
-
-    //public Statement getProgram(){
-       // return this.program;
-    //}
 
     @Override
     public String toString() {
