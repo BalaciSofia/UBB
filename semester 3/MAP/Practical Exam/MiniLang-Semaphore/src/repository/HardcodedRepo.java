@@ -434,59 +434,39 @@ public class HardcodedRepo {
         //switch statement
         this.statements.add(
                 new CompStatement(
-                        // int a;
                         new VarDeclStatement("a", new IntType()),
-
                         new CompStatement(
-                                // int b;
                                 new VarDeclStatement("b", new IntType()),
-
                                 new CompStatement(
-                                        // int c;
                                         new VarDeclStatement("c", new IntType()),
-
                                         new CompStatement(
-                                                // a = 1;
                                                 new AssignStatement(
                                                         "a",
                                                         new ValueExpression(new IntValue(1))
                                                 ),
-
                                                 new CompStatement(
-                                                        // b = 2;
                                                         new AssignStatement(
                                                                 "b",
                                                                 new ValueExpression(new IntValue(2))
                                                         ),
-
                                                         new CompStatement(
-                                                                // c = 5;
                                                                 new AssignStatement(
                                                                         "c",
                                                                         new ValueExpression(new IntValue(5))
                                                                 ),
-
                                                                 new CompStatement(
-                                                                        // switch(a*10)
                                                                         new SwitchStatement(
-                                                                                // exp: a * 10
                                                                                 new ArithmeticExpression(
                                                                                         new VariableExpression("a"),
                                                                                         new ValueExpression(new IntValue(10)),
                                                                                         '*'
                                                                                 ),
-
-                                                                                // exp1: b * c
                                                                                 new ArithmeticExpression(
                                                                                         new VariableExpression("b"),
                                                                                         new VariableExpression("c"),
                                                                                         '*'
                                                                                 ),
-
-                                                                                // exp2: 10
                                                                                 new ValueExpression(new IntValue(10)),
-
-                                                                                // stmt1: print(a); print(b)
                                                                                 new CompStatement(
                                                                                         new PrintStatement(
                                                                                                 new VariableExpression("a")
@@ -495,8 +475,6 @@ public class HardcodedRepo {
                                                                                                 new VariableExpression("b")
                                                                                         )
                                                                                 ),
-
-                                                                                // stmt2: print(100); print(200)
                                                                                 new CompStatement(
                                                                                         new PrintStatement(
                                                                                                 new ValueExpression(new IntValue(100))
@@ -505,14 +483,10 @@ public class HardcodedRepo {
                                                                                                 new ValueExpression(new IntValue(200))
                                                                                         )
                                                                                 ),
-
-                                                                                // default: print(300)
                                                                                 new PrintStatement(
                                                                                         new ValueExpression(new IntValue(300))
                                                                                 )
                                                                         ),
-
-                                                                        // print(300)
                                                                         new PrintStatement(
                                                                                 new ValueExpression(new IntValue(300))
                                                                         )
@@ -524,110 +498,20 @@ public class HardcodedRepo {
                         )
                 )
         );
-
-        //sleep statement
-        this.statements.add(
-                new CompStatement(
-                        // int v;
-                        new VarDeclStatement("v", new IntType()),
-
-                        new CompStatement(
-                                // v = 0;
-                                new AssignStatement(
-                                        "v",
-                                        new ValueExpression(new IntValue(0))
-                                ),
-
-                                new CompStatement(
-                                        // while (v < 3) ( fork(print(v); v=v+1); v=v+1 )
-                                        new WhileStatement(
-                                                new RelationalExpression(
-                                                        new VariableExpression("v"),
-                                                        new ValueExpression(new IntValue(3)),
-                                                        RelationalOp.LT
-                                                ),
-                                                new CompStatement(
-                                                        new ForkStatement(
-                                                                new CompStatement(
-                                                                        new PrintStatement(new VariableExpression("v")),
-                                                                        new AssignStatement(
-                                                                                "v",
-                                                                                new ArithmeticExpression(
-                                                                                        new VariableExpression("v"),
-                                                                                        new ValueExpression(new IntValue(1)),
-                                                                                        '+'
-                                                                                )
-                                                                        )
-                                                                )
-                                                        ),
-                                                        new AssignStatement(
-                                                                "v",
-                                                                new ArithmeticExpression(
-                                                                        new VariableExpression("v"),
-                                                                        new ValueExpression(new IntValue(1)),
-                                                                        '+'
-                                                                )
-                                                        )
-                                                )
-                                        ),
-
-                                        new CompStatement(
-                                                // sleep(5);
-                                                new SleepStatement(5),
-
-                                                // print(v*10)
-                                                new PrintStatement(
-                                                        new ArithmeticExpression(
-                                                                new VariableExpression("v"),
-                                                                new ValueExpression(new IntValue(10)),
-                                                                '*'
-                                                        )
-                                                )
-                                        )
-                                )
-                        )
-                )
-        );
-
-        //wait statement
-        this.statements.add(
-                new CompStatement(
-                        new VarDeclStatement("v", new IntType()),
-                        new CompStatement(
-                                new AssignStatement("v", new ValueExpression(new IntValue(20))),
-                                new CompStatement(
-                                        new WaitStatement(10),
-                                        new PrintStatement(
-                                                new ArithmeticExpression (new VariableExpression("v"),new ValueExpression(new IntValue(10)),'*')
-                                        )
-                                )
-                        )
-                )
-        );
-
         //semaphore statement
         this.statements.add(
                 new CompStatement(
-                        // Ref int v1;
                         new VarDeclStatement("v1", new RefType(new IntType())),
-
                         new CompStatement(
-                                // int cnt;
                                 new VarDeclStatement("cnt", new IntType()),
-
                                 new CompStatement(
-                                        // new(v1,1);
                                         new NewStatement("v1", new ValueExpression(new IntValue(1))),
-
                                         new CompStatement(
-                                                // createSemaphore(cnt, rH(v1));
                                                 new CreateSemaphore(
                                                         "cnt",
                                                         new ReadHeapExpression(new VariableExpression("v1"))
                                                 ),
-
                                                 new CompStatement(
-                                                        // fork(acquire(cnt); wh(v1,rh(v1)*10); print(rh(v1)); release(cnt));
                                                         new ForkStatement(
                                                                 new CompStatement(
                                                                         new AcquireStatement("cnt"),
@@ -649,9 +533,7 @@ public class HardcodedRepo {
                                                                         )
                                                                 )
                                                         ),
-
                                                         new CompStatement(
-                                                                // fork(acquire(cnt); wh(v1,rh(v1)*10); wh(v1,rh(v1)*2); print(rh(v1)); release(cnt));
                                                                 new ForkStatement(
                                                                         new CompStatement(
                                                                                 new AcquireStatement("cnt"),
@@ -683,13 +565,9 @@ public class HardcodedRepo {
                                                                                 )
                                                                         )
                                                                 ),
-
                                                                 new CompStatement(
-                                                                        // acquire(cnt);
                                                                         new AcquireStatement("cnt"),
-
                                                                         new CompStatement(
-                                                                                // print(rh(v1)-1);
                                                                                 new PrintStatement(
                                                                                         new ArithmeticExpression(
                                                                                                 new ReadHeapExpression(new VariableExpression("v1")),
@@ -697,8 +575,6 @@ public class HardcodedRepo {
                                                                                                 '-'
                                                                                         )
                                                                                 ),
-
-                                                                                // release(cnt)
                                                                                 new ReleaseStatement("cnt")
                                                                         )
                                                                 )

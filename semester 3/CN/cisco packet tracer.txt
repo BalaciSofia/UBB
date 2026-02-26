@@ -1,0 +1,30 @@
+
+sa configurezi rutare in paralel(serial links)
+-trebuie adaugat din physical componenta HWIC-2T
+si dupa in config o sa ii apara aia 3 biti 0/0/0 sau 0/1/0 etc
+-trage cabluri 
+| Connection type          | Use Auto cable?                   |
+| ------------------------ | --------------------------------- |
+| PC ↔ Switch              | ✅ Yes                             |
+| Switch ↔ Router          | ✅ Yes                             |
+| Router ↔ Router (Serial) | ❌ No (choose Serial DCE manually) |
+
+-asignez addresse ip la router Ethernet interfaces->CLI
+cod(enter dupa fiecare)
+[enable
+configure terminal
+interface gigabitEthernet 0/0
+ip address 192.168.0.1 255.255.255.0
+no shutdown
+exit]
+
+--configure serial links
+cod
+[enable
+configure terminal
+interface serial 0/1/0
+ip address 10.0.0.1 255.255.255.252
+[clock rate 2000000]
+no shutdown
+exit]
+

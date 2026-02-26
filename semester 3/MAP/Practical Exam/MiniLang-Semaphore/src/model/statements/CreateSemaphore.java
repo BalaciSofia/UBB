@@ -6,8 +6,7 @@ import javafx.util.Pair;
 import model.ProgramState;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
-import model.adts.semaphoreADT.MySemaphoreI;
-import model.adts.stackADT.MyStackI;
+import model.adts.semaphoreADT.MySemaphoreTableI;
 import model.expressions.Expression;
 import model.types.IntType;
 import model.types.Type;
@@ -28,22 +27,23 @@ public class CreateSemaphore implements Statement {
 
     @Override
     public ProgramState execute(ProgramState state) throws ModelException, DictException {
-        MySemaphoreI semTable = state.getSemaphoreTable();
+        MySemaphoreTableI semTable = state.getSemaphoreTable();
         MyHeapI heap = state.getHeap();
         MyDictionaryI<String, Value> symTable = state.getTable();
 
-        Value capValue = cap.evaluate(symTable, heap);
-        if (!capValue.getType().equals(new IntType())) {
-            throw new ModelException("CreateSemaphore: capacity expression must evaluate to an integer");
-        }
-        int number = ((IntValue) capValue).getValue();
-
-        Value aux = symTable.get(varName);
-        if (aux == null || !aux.getType().equals(new IntType())) {
-            throw new ModelException("CreateSemaphore: variable must be defined as integer");
-        }
         ProgramState.semaphoreLock.lock();
         try {
+            Value capValue = cap.evaluate(symTable, heap);
+            if (!capValue.getType().equals(new IntType())) {
+                throw new ModelException("Expression must evaluate to an int");
+            }
+            int number = ((IntValue) capValue).getValue();
+
+            Value aux = symTable.get(varName);
+            if (aux == null || !aux.getType().equals(new IntType())) {
+                throw new ModelException("Variable must be defined as int");
+            }
+
             List<Integer> emptyList = new ArrayList<>();
             int location = semTable.put(new Pair<>(number,emptyList));
             symTable.set(varName, new IntValue(location));
@@ -57,10 +57,10 @@ public class CreateSemaphore implements Statement {
     public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type> typeEnv) throws Exception {
         Type varType = typeEnv.get(varName);
         if (varType == null || !varType.equals(new IntType())) {
-            throw new ModelException("CreateSemaphore: '" + varName + "' must be declared as int");
+            throw new ModelException(varName + " must be declared as int");
         }
         if (!cap.typeCheck(typeEnv).equals(new IntType())) {
-            throw new ModelException("CreateSemaphore: capacity expression must be int");
+            throw new ModelException("Expression must evaluate to int");
         }
         return typeEnv;
     }

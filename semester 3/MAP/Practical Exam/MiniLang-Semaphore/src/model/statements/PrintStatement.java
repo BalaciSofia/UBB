@@ -31,6 +31,6 @@ public class PrintStatement implements Statement {
 
     @Override
     public String toString(){
-        return "print["+exp.toString()+"]";
+        return "print("+exp.toString()+")";
     }
 }

@@ -1,0 +1,82 @@
+use test
+
+CREATE TABLE Accounts (
+	aid INT PRIMARY KEY,
+	initial_deposit INT
+)
+
+CREATE TABLE Customers (
+	cid INT PRIMARY KEY,
+	account INT UNIQUE FOREIGN KEY REFERENCES Accounts(aid)
+)
+
+CREATE TABLE FoodItems (
+	fid INT PRIMARY KEY,
+	[name] VARCHAR(50)
+)
+
+CREATE TABLE AccountFoodItems (
+	account INT FOREIGN KEY REFERENCES Accounts(aid),
+	food_item INT FOREIGN KEY REFERENCES FoodItems(fid),
+	PRIMARY KEY (account, food_item)
+)
+
+CREATE TABLE Orders (
+	oid INT PRIMARY KEY,
+	[type] VARCHAR(10),
+	price INT,
+	CONSTRAINT chk_order_refund
+		CHECK ([type] in ('ORDER', 'REFUND')),
+	account INT FOREIGN KEY REFERENCES Accounts(aid)
+)
+
+CREATE TABLE [Statistics] (
+	customer INT PRIMARY KEY REFERENCES Customers(cid),
+	order_count INT,
+	refund_count INT,
+	total_operations INT,
+	money_left INT
+)
+GO
+
+CREATE PROC usp_GetFoodNames @cid INT
+AS
+BEGIN
+	SELECT f.[name] FROM Customers c 
+	INNER JOIN Accounts a ON c.account = a.[aid] 
+	INNER JOIN AccountFoodItems af ON af.account = a.[aid] 
+	INNER JOIN FoodItems f ON af.food_item = f.fid 
+	WHERE c.cid = @cid
+
+	SELECT s.money_left
+	FROM Customers c
+	INNER JOIN [Statistics] s ON s.customer = c.cid
+	WHERE c.cid = @cid
+END
+GO
+
+CREATE VIEW v_CustomerStats 
+AS
+	SELECT c.cid AS CustomerID, s.order_count AS OrderCount, s.refund_count AS RefundCount
+	FROM Customers c
+	INNER JOIN [Statistics] s ON c.cid = s.customer
+GO
+
+CREATE FUNCTION uf_GetOnlyPizza ()
+RETURNS TABLE AS RETURN
+	SELECT c.cid AS CustomerID, s.order_count + s.refund_count AS TotalTransactions
+	FROM Customers c
+	INNER JOIN [Statistics] s on c.cid = s.customer
+	WHERE EXISTS (
+		SELECT *
+		FROM AccountFoodItems afi
+		INNER JOIN FoodItems f ON afi.food_item = f.fid
+		WHERE afi.account = c.account AND f.[name] = 'Pizza'
+	)
+	AND NOT EXISTS (
+		SELECT *
+		FROM AccountFoodItems afi
+		INNER JOIN FoodItems f ON afi.food_item = f.fid
+		WHERE afi.account = c.account AND f.[name] <> 'Pizza'
+	)
+GO

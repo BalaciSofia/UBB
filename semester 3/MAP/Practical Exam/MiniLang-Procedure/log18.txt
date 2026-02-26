@@ -1,0 +1,2340 @@
+ID:2
+ExeStack:
+[procedure sum(a,b) [int v;[v=a+b;print[v]]];[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+procedure sum(a,b) [int v;[v=a+b;print[v]]]
+[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+procedure sum(a,b) [int v;[v=a+b;print[v]]]
+[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+procedure product(a,b) [int v;[v=a*b;print[v]]]
+[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+procedure product(a,b) [int v;[v=a*b;print[v]]]
+[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+int v
+[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+int v
+[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+int w
+[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+int w
+[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]
+Table:
+v -> 0
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]
+Table:
+v -> 0
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+v=2
+[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]
+Table:
+v -> 0
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+v=2
+[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]
+Table:
+v -> 0
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]
+Table:
+v -> 2
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]
+Table:
+v -> 2
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+w=5
+[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]
+Table:
+v -> 2
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+w=5
+[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]
+Table:
+v -> 2
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]
+Table:
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]
+Table:
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+call sum[v*10, w]
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+call sum[v*10, w]
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[int v;[v=a+b;print[v]]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[int v;[v=a+b;print[v]]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+int v
+[v=a+b;print[v]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+int v
+[v=a+b;print[v]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[v=a+b;print[v]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[v=a+b;print[v]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+v=a+b
+print[v]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+v=a+b
+print[v]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+print[v]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 25
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+print[v]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 25
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 25
+
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 25
+
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+print[v]
+fork([call product[v, w];fork(call sum[v, w])])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+print[v]
+fork([call product[v, w];fork(call sum[v, w])])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+fork([call product[v, w];fork(call sum[v, w])])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+fork([call product[v, w];fork(call sum[v, w])])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[call product[v, w];fork(call sum[v, w])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[call product[v, w];fork(call sum[v, w])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+call product[v, w]
+fork(call sum[v, w])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+call product[v, w]
+fork(call sum[v, w])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[int v;[v=a*b;print[v]]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[int v;[v=a*b;print[v]]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+int v
+[v=a*b;print[v]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+int v
+[v=a*b;print[v]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[v=a*b;print[v]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[v=a*b;print[v]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+v=a*b
+print[v]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+v=a*b
+print[v]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+print[v]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 10
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+print[v]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 10
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 10
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 10
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+fork(call sum[v, w])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+fork(call sum[v, w])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+call sum[v, w]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+call sum[v, w]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+[int v;[v=a+b;print[v]]]
+return
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+[int v;[v=a+b;print[v]]]
+return
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+int v
+[v=a+b;print[v]]
+return
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+int v
+[v=a+b;print[v]]
+return
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+[v=a+b;print[v]]
+return
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+[v=a+b;print[v]]
+return
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+v=a+b
+print[v]
+return
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+v=a+b
+print[v]
+return
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+print[v]
+return
+Table:
+a -> 2
+b -> 5
+v -> 7
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+print[v]
+return
+Table:
+a -> 2
+b -> 5
+v -> 7
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+return
+Table:
+a -> 2
+b -> 5
+v -> 7
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+7
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+return
+Table:
+a -> 2
+b -> 5
+v -> 7
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+7
+FileTable:
+Heap:
+
+ID:4
+ExeStack:
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+7
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[procedure sum(a,b) [int v;[v=a+b;print[v]]];[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+procedure sum(a,b) [int v;[v=a+b;print[v]]]
+[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+procedure sum(a,b) [int v;[v=a+b;print[v]]]
+[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[procedure product(a,b) [int v;[v=a*b;print[v]]];[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+procedure product(a,b) [int v;[v=a*b;print[v]]]
+[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+procedure product(a,b) [int v;[v=a*b;print[v]]]
+[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[int v;[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int v
+[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int v
+[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[int w;[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int w
+[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int w
+[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]
+Table:
+v -> 0
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[v=2;[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]]
+Table:
+v -> 0
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+v=2
+[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]
+Table:
+v -> 0
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+v=2
+[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]
+Table:
+v -> 0
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]
+Table:
+v -> 2
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[w=5;[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]]
+Table:
+v -> 2
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+w=5
+[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]
+Table:
+v -> 2
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+w=5
+[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]
+Table:
+v -> 2
+w -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]
+Table:
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[call sum[v*10, w];[print[v];fork([call product[v, w];fork(call sum[v, w])])]]
+Table:
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+call sum[v*10, w]
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+call sum[v*10, w]
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[int v;[v=a+b;print[v]]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[int v;[v=a+b;print[v]]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int v
+[v=a+b;print[v]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int v
+[v=a+b;print[v]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[v=a+b;print[v]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[v=a+b;print[v]]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+v=a+b
+print[v]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+v=a+b
+print[v]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+print[v]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 25
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+print[v]
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 25
+
+v -> 2
+w -> 5
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 25
+
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+return
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+a -> 20
+b -> 5
+v -> 25
+
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[print[v];fork([call product[v, w];fork(call sum[v, w])])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+print[v]
+fork([call product[v, w];fork(call sum[v, w])])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+print[v]
+fork([call product[v, w];fork(call sum[v, w])])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+fork([call product[v, w];fork(call sum[v, w])])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+fork([call product[v, w];fork(call sum[v, w])])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[call product[v, w];fork(call sum[v, w])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[call product[v, w];fork(call sum[v, w])]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+call product[v, w]
+fork(call sum[v, w])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+call product[v, w]
+fork(call sum[v, w])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[int v;[v=a*b;print[v]]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[int v;[v=a*b;print[v]]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+int v
+[v=a*b;print[v]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+int v
+[v=a*b;print[v]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[v=a*b;print[v]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[v=a*b;print[v]]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+v=a*b
+print[v]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+v=a*b
+print[v]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+print[v]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 10
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+print[v]
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 10
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 10
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+return
+fork(call sum[v, w])
+Table:
+a -> 2
+b -> 5
+v -> 10
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+fork(call sum[v, w])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+fork(call sum[v, w])
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+call sum[v, w]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+call sum[v, w]
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[int v;[v=a+b;print[v]]]
+return
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[int v;[v=a+b;print[v]]]
+return
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+int v
+[v=a+b;print[v]]
+return
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+int v
+[v=a+b;print[v]]
+return
+Table:
+a -> 2
+b -> 5
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[v=a+b;print[v]]
+return
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+[v=a+b;print[v]]
+return
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+v=a+b
+print[v]
+return
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+v=a+b
+print[v]
+return
+Table:
+a -> 2
+b -> 5
+v -> 0
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+print[v]
+return
+Table:
+a -> 2
+b -> 5
+v -> 7
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+print[v]
+return
+Table:
+a -> 2
+b -> 5
+v -> 7
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+return
+Table:
+a -> 2
+b -> 5
+v -> 7
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+7
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+return
+Table:
+a -> 2
+b -> 5
+v -> 7
+
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+7
+FileTable:
+Heap:
+
+ID:3
+ExeStack:
+Table:
+v -> 2
+w -> 5
+
+Output:
+25
+2
+10
+7
+FileTable:
+Heap:
+

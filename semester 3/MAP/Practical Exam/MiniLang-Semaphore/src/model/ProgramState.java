@@ -6,7 +6,7 @@ import exceptions.adtExceptions.StackException;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.adts.listADT.MyListI;
-import model.adts.semaphoreADT.MySemaphoreI;
+import model.adts.semaphoreADT.MySemaphoreTableI;
 import model.adts.stackADT.MyStackI;
 import model.statements.Statement;
 import model.values.Value;
@@ -23,11 +23,11 @@ public class ProgramState {
         private final MyHeapI heap;
         private int id;
         private static int nextId=0;
-        private MySemaphoreI semaphoreTable;
+        private MySemaphoreTableI semaphoreTable;
         public final static Lock semaphoreLock = new ReentrantLock();
 
     public ProgramState(MyStackI<Statement> stk, MyDictionaryI<String, Value> symtbl, MyListI<Value> ot,
-                        MyDictionaryI<String, BufferedReader> fileTable, MyHeapI heap, MySemaphoreI semaphoreTable){
+                        MyDictionaryI<String, BufferedReader> fileTable, MyHeapI heap, MySemaphoreTableI semaphoreTable){
         this.exeStack = stk;
         this.table = symtbl;
         this.output = ot;
@@ -57,7 +57,7 @@ public class ProgramState {
     public MyHeapI getHeap(){
         return this.heap;
     }
-    public MySemaphoreI getSemaphoreTable(){
+    public MySemaphoreTableI getSemaphoreTable(){
         return this.semaphoreTable;
     }
 

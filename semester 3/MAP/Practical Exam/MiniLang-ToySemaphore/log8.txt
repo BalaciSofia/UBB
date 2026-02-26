@@ -1,0 +1,165 @@
+ID:1
+ExeStack:
+[Ref(int) v;[new(v,20);[new(v,30);print[ReadHeap(v)]]]]
+Table:
+Output:
+FileTable:
+Heap:
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+Ref(int) v
+[new(v,20);[new(v,30);print[ReadHeap(v)]]]
+Table:
+Output:
+FileTable:
+Heap:
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+Ref(int) v
+[new(v,20);[new(v,30);print[ReadHeap(v)]]]
+Table:
+Output:
+FileTable:
+Heap:
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+[new(v,20);[new(v,30);print[ReadHeap(v)]]]
+Table:
+v -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+[new(v,20);[new(v,30);print[ReadHeap(v)]]]
+Table:
+v -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+new(v,20)
+[new(v,30);print[ReadHeap(v)]]
+Table:
+v -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+new(v,20)
+[new(v,30);print[ReadHeap(v)]]
+Table:
+v -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+[new(v,30);print[ReadHeap(v)]]
+Table:
+v -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+[new(v,30);print[ReadHeap(v)]]
+Table:
+v -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+new(v,30)
+print[ReadHeap(v)]
+Table:
+v -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+new(v,30)
+print[ReadHeap(v)]
+Table:
+v -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+print[ReadHeap(v)]
+Table:
+v -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+print[ReadHeap(v)]
+Table:
+v -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+2 -> 30
+
+SemaphoreTable:
+
+ID:1
+ExeStack:
+Table:
+v -> RefValue(2,int)
+Output:
+30
+FileTable:
+Heap:
+2 -> 30
+
+SemaphoreTable:
+

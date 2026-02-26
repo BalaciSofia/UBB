@@ -15,7 +15,7 @@ import model.ProgramState;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeapI;
 import model.adts.listADT.MyListI;
-import model.adts.semaphoreADT.MySemaphoreI;
+import model.adts.semaphoreADT.MySemaphoreTableI;
 import model.values.Value;
 
 import java.io.BufferedReader;
@@ -65,14 +65,13 @@ public class MainGUI {
         this.exeStackListView = new ListView<>();
 
         this.semaphoreTableView = new TableView<>();
-        TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, Integer> semAddressColumn = new TableColumn<>("Address");
+        TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, Integer> semAddressColumn = new TableColumn<>("Index");
         semAddressColumn.setCellValueFactory(cd -> new SimpleObjectProperty<>(cd.getValue().getKey()));
-        TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, Integer> semN1Column = new TableColumn<>("N1");
+        TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, Integer> semN1Column = new TableColumn<>("Value");
         semN1Column.setCellValueFactory(cd -> new SimpleObjectProperty<>(cd.getValue().getValue().getKey()));
         TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, List<Integer>> semListColumn = new TableColumn<>("List");
         semListColumn.setCellValueFactory(cd -> new SimpleObjectProperty<>(cd.getValue().getValue().getValue())
         );
-
         this.semaphoreTableView.getColumns().setAll(semAddressColumn, semN1Column, semListColumn);
 
         semaphoreTableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
@@ -133,7 +132,6 @@ public class MainGUI {
                 semBox
         );
 
-        // Make Execution Stack bigger than Symbol Table (looks nicer)
         symTableView.setPrefHeight(200);
         exeStackListView.setPrefHeight(300);
         semaphoreTableView.setPrefHeight(200);
@@ -184,7 +182,7 @@ public class MainGUI {
             this.programStatesListView.setItems(programIds);
 
             //semaphore table
-            MySemaphoreI semaphoreTable = programs.get(0).getSemaphoreTable();
+            MySemaphoreTableI semaphoreTable = programs.get(0).getSemaphoreTable();
             var semaphoreRows = semaphoreTable.getContent().entrySet().stream()
                     .map(e -> new AbstractMap.SimpleEntry<>(e.getKey(), e.getValue()))
                     .toList();

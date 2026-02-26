@@ -5,7 +5,7 @@ import exceptions.modelExceptions.ModelException;
 import javafx.util.Pair;
 import model.ProgramState;
 import model.adts.dictionaryADT.MyDictionaryI;
-import model.adts.semaphoreADT.MySemaphoreI;
+import model.adts.semaphoreADT.MySemaphoreTableI;
 import model.types.IntType;
 import model.types.Type;
 import model.values.IntValue;
@@ -23,15 +23,23 @@ public class ReleaseStatement implements Statement {
     @Override
     public ProgramState execute(ProgramState state) throws ModelException, DictException {
         MyDictionaryI<String, Value> symTable = state.getTable();
-        MySemaphoreI semTable = state.getSemaphoreTable();
-
-        Value v = symTable.get(varName);
-        int foundIndex = ((IntValue) v).getValue();
+        MySemaphoreTableI semTable = state.getSemaphoreTable();
 
         ProgramState.semaphoreLock.lock();
         try {
+            if(!symTable.containsKey(varName)) {
+                throw new ModelException(varName + " is not defined");
+            }
+            Value v = symTable.get(varName);
+
+            if (!v.getType().equals(new IntType())) {
+                throw new ModelException(varName + " must be of type int");
+            }
+
+            int foundIndex = ((IntValue) v).getValue();
+
             if (!semTable.containsKey(foundIndex)) {
-                throw new ModelException("release: no semaphore at index " + foundIndex);
+                throw new ModelException("no semaphore at index " + foundIndex);
             }
 
             Pair<Integer, List<Integer>> entry = semTable.get(foundIndex);
@@ -50,13 +58,13 @@ public class ReleaseStatement implements Statement {
     public MyDictionaryI<String, Type> typeCheck(MyDictionaryI<String, Type> typeEnv) throws Exception {
         Type t = typeEnv.get(varName);
         if (t == null || !t.equals(new IntType())) {
-            throw new ModelException("release: '" + varName + "' must be int");
+            throw new ModelException(varName + " must be int");
         }
         return typeEnv;
     }
     @Override
     public String toString() {
-        return "release("+varName+")";
+        return "Release("+varName+")";
     }
 
 }

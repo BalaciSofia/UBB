@@ -11,20 +11,16 @@ import model.ProgramState;
 import model.adts.dictionaryADT.MyDictionary;
 import model.adts.dictionaryADT.MyDictionaryI;
 import model.adts.heapADT.MyHeap;
-import model.adts.heapADT.MyHeapI;
 import model.adts.listADT.MyList;
-import model.adts.listADT.MyListI;
-import model.adts.semaphoreADT.MySemaphore;
+import model.adts.semaphoreADT.MySemaphoreTable;
 import model.adts.stackADT.MyStack;
 import model.adts.stackADT.MyStackI;
 import model.statements.Statement;
 import model.types.Type;
-import model.values.Value;
 import repository.HardcodedRepo;
 import repository.Repo;
 import repository.RepoI;
 
-import java.io.BufferedReader;
 import java.util.List;
 
 public class SelectProgramGUI extends Application {
@@ -92,7 +88,7 @@ public class SelectProgramGUI extends Application {
                 new MyList<>(),
                 new MyDictionary<>(),
                 new MyHeap(),
-                new MySemaphore()
+                new MySemaphoreTable()
         );
         RepoI repo = new Repo(prgState, filename);
         return new Controller(repo);

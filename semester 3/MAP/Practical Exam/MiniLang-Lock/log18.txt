@@ -1,0 +1,6070 @@
+ID:1
+ExeStack:
+[Ref(int) v1;[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+Ref(int) v1
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+Ref(int) v1
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+Ref(int) v2
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+Ref(int) v2
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+int x
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+int x
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+int q
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+int q
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+new(v1,20)
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+new(v1,20)
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+new(v2,30)
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+new(v2,30)
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+newLock(x)
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+newLock(x)
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]])
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]])
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+[fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+[fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+newLock(q)
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]])
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+newLock(q)
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]])
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]])
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]])
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+[fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+[fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+nop
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]])
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+nop
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]])
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+nop
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:2
+ExeStack:
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+nop
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+nop
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)-1)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)*10)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+nop
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)-1)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)*10)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 200
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+nop
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:3
+ExeStack:
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:4
+ExeStack:
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+nop
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)+5)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)+5)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+lock(x)
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+lock(x)
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:5
+ExeStack:
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+print[ReadHeap(v1)]
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+print[ReadHeap(v1)]
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+unlock(x)
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+unlock(x)
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+lock(q)
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+lock(q)
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+print[ReadHeap(v2)]
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+print[ReadHeap(v2)]
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+305
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+305
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:1
+ExeStack:
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+199
+305
+FileTable:
+Heap:
+1 -> 199
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@7622a946ID:6
+ExeStack:
+[Ref(int) v1;[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+Ref(int) v1
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+Ref(int) v1
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+Ref(int) v2
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+Ref(int) v2
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+int x
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+int x
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+int q
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+int q
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+new(v1,20)
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+new(v1,20)
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+new(v2,30)
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+new(v2,30)
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+newLock(x)
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+newLock(x)
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]])
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]])
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+[fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+[fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+newLock(q)
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]])
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+newLock(q)
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]])
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]])
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]])
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+[fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+[fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+nop
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)-1)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]])
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+nop
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)-1)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]])
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+nop
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:8
+ExeStack:
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+nop
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+nop
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)*10)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+nop
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)*10)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:7
+ExeStack:
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+nop
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:9
+ExeStack:
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+nop
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+lock(x)
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)+5)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+lock(x)
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)+5)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+print[ReadHeap(v1)]
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:10
+ExeStack:
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+print[ReadHeap(v1)]
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+unlock(x)
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+unlock(x)
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+lock(q)
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+lock(q)
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+print[ReadHeap(v2)]
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+print[ReadHeap(v2)]
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+305
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+305
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:6
+ExeStack:
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+305
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@1e5c6d02ID:1
+ExeStack:
+[Ref(int) v1;[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+Ref(int) v1
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+Ref(int) v1
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[Ref(int) v2;[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+Ref(int) v2
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+Ref(int) v2
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[int x;[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+int x
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+int x
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[int q;[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+int q
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+int q
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[new(v1,20);[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+new(v1,20)
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+new(v1,20)
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[new(v2,30);[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+new(v2,30)
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+new(v2,30)
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[newLock(x);[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+newLock(x)
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+newLock(x)
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]);[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]])
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+fork([fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]])
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+[fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[newLock(q);[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+[fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]);[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+newLock(q)
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]])
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+newLock(q)
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 0
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+fork([lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]])
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]);[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+[lock(x);[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]])
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+fork([fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]])
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+[fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[nop;[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)-1);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+[fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]);[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+nop
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)-1)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]])
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+nop
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)-1)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+fork([lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]])
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[nop;[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+lock(x)
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+[lock(q);[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+nop
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:3
+ExeStack:
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+nop
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);unlock(x)]
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[nop;[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)*10);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 19
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+nop
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)*10)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+nop
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+unlock(x)
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)*10)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 30
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:2
+ExeStack:
+Table:
+x -> 1
+q -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[nop;[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+nop
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:4
+ExeStack:
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+nop
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+lock(q)
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[lock(x);[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)+5);unlock(q)]
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+lock(x)
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)+5)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+lock(x)
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)+5)
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 300
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[print[ReadHeap(v1)];[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+unlock(q)
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+print[ReadHeap(v1)]
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:5
+ExeStack:
+Table:
+x -> 1
+q -> 2
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+print[ReadHeap(v1)]
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[unlock(x);[lock(q);[print[ReadHeap(v2)];unlock(q)]]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+unlock(x)
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+unlock(x)
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[lock(q);[print[ReadHeap(v2)];unlock(q)]]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+lock(q)
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+lock(q)
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+[print[ReadHeap(v2)];unlock(q)]
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+print[ReadHeap(v2)]
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+print[ReadHeap(v2)]
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+305
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+unlock(q)
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+305
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49ID:1
+ExeStack:
+Table:
+q -> 2
+x -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+Output:
+190
+305
+FileTable:
+Heap:
+1 -> 190
+2 -> 305
+LockTable:
+model.adts.lockADT.MyLock@e368d49

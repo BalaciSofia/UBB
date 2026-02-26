@@ -1,0 +1,113 @@
+Practic lab baze --BOOKS
+
+I
+1.
+publisher care are avg(stok)>80 si sum(pages)<500 si pages<=300
+nu exita 2 entrys cu acelasi publisher
+
+deci stock>80 pages<=300
+
+penguin 
+bantam
+harper
+vintage
+picador
+
+==>c 5 and contains Penguin
+
+2.
+inner join pe tabel
+a.pages>400 sau (b.stok>100 ai a.publisher contine a) 
+
+Ace
+Scribner
+Allen & ...
+
+==>c 3
+
+3.
+daca valoarea noua este mai mare decat cea veche se aduna cele doua
+trigger e set based deci rezultatul este suma pt toate randurile care respecta
+
+penguin 300  nimic
+ace 500 nimic 
+scribner 1200 nimic
+Hobit 310 nimic
+
+mai sunt 3 da nu stiu daca se incadreaza 
+ori e.nici una nu e bune
+ori alta daca se incadreaza una din alea 3
+
+
+II
+
+1.
+customer has one account 
+
+an account has multiple food types and many orders(order /refund)
+
+statistics include the number of order/refund, total ops, money left(initial deposit- spent)
+
+create table food(
+	foodID int primary key,
+	foodName varchar(50)
+)
+
+create table account(
+	accountID int primary key,
+	deposit decimal(10,2)
+)
+
+create table customer(
+	customerID int primary key,
+	accountID int foreign key rferences account(accountID)
+)
+
+
+create table order(
+	orderID int primary key,
+	status varchar(10), --order/refund
+	accountID int,
+	constraint foreign key (accountID) references account(accountID)
+)
+
+
+create table accountFood (
+	accountID int,
+	foodID int,
+	primary key(accountID,foodID),
+	constraint foreign key (accountID) references account(accountID),
+	constraint foreign key (foodID) references food(foodID)
+)
+
+
+creat table statistics(
+	statId int primary key,
+	noOrders int,
+	noRefunds int,
+	totalOp as (noOrders + noRefunds) persisted,
+	modey decimal(10,2),
+	accountId int,
+	constraint foreign key (accountID) references account(accountID)
+)
+
+2.
+create proc problem2 (@customerid int)
+as
+begin
+	--all food names ordered by customer and the amount of money left
+	Select f.foodName,s.money
+	from costumer c 
+		inner join account a on c.accountID=a.accountID
+		inner join accountFood af on a.accountId=af.accountID
+		inner join food f on af.foodID=f.foodID 
+		inner join statistics s on a.customerID=s.accountID
+	where c.customerID=@customerID
+go
+
+
+
+
+
+
+

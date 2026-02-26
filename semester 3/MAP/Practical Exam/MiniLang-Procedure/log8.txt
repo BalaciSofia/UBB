@@ -1,0 +1,151 @@
+ID:2
+ExeStack:
+[Ref(int) v;[new(v,20);[new(v,30);print[ReadHeap(v)]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+Ref(int) v
+[new(v,20);[new(v,30);print[ReadHeap(v)]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+Ref(int) v
+[new(v,20);[new(v,30);print[ReadHeap(v)]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[new(v,20);[new(v,30);print[ReadHeap(v)]]]
+Table:
+v -> RefValue(0,int)
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[new(v,20);[new(v,30);print[ReadHeap(v)]]]
+Table:
+v -> RefValue(0,int)
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+new(v,20)
+[new(v,30);print[ReadHeap(v)]]
+Table:
+v -> RefValue(0,int)
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+new(v,20)
+[new(v,30);print[ReadHeap(v)]]
+Table:
+v -> RefValue(0,int)
+
+Output:
+FileTable:
+Heap:
+
+ID:2
+ExeStack:
+[new(v,30);print[ReadHeap(v)]]
+Table:
+v -> RefValue(1,int)
+
+Output:
+FileTable:
+Heap:
+1 -> 20
+
+ID:2
+ExeStack:
+[new(v,30);print[ReadHeap(v)]]
+Table:
+v -> RefValue(1,int)
+
+Output:
+FileTable:
+Heap:
+1 -> 20
+
+ID:2
+ExeStack:
+new(v,30)
+print[ReadHeap(v)]
+Table:
+v -> RefValue(1,int)
+
+Output:
+FileTable:
+Heap:
+1 -> 20
+
+ID:2
+ExeStack:
+new(v,30)
+print[ReadHeap(v)]
+Table:
+v -> RefValue(1,int)
+
+Output:
+FileTable:
+Heap:
+1 -> 20
+
+ID:2
+ExeStack:
+print[ReadHeap(v)]
+Table:
+v -> RefValue(2,int)
+
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+
+ID:2
+ExeStack:
+print[ReadHeap(v)]
+Table:
+v -> RefValue(2,int)
+
+Output:
+FileTable:
+Heap:
+2 -> 30
+
+ID:2
+ExeStack:
+Table:
+v -> RefValue(2,int)
+
+Output:
+30
+FileTable:
+Heap:
+2 -> 30
+

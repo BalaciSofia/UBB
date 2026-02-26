@@ -65,12 +65,4 @@ public class ArithmeticExpression implements Expression{
     }
 
 
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        ArithmeticExpression r = (ArithmeticExpression)super.clone();
-//        r.exp1 = (Expression)exp1.clone();
-//        r.exp2 = (Expression)exp2.clone();
-        return r;
-    }
-
 }

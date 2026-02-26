@@ -1,0 +1,196 @@
+ID:1
+ExeStack:
+[int a;[int b;[a=2+3*5;[b=a+1;print[b]]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int a
+[int b;[a=2+3*5;[b=a+1;print[b]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int a
+[int b;[a=2+3*5;[b=a+1;print[b]]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[int b;[a=2+3*5;[b=a+1;print[b]]]]
+Table:
+a -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[int b;[a=2+3*5;[b=a+1;print[b]]]]
+Table:
+a -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int b
+[a=2+3*5;[b=a+1;print[b]]]
+Table:
+a -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int b
+[a=2+3*5;[b=a+1;print[b]]]
+Table:
+a -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[a=2+3*5;[b=a+1;print[b]]]
+Table:
+a -> 0
+b -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[a=2+3*5;[b=a+1;print[b]]]
+Table:
+a -> 0
+b -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+a=2+3*5
+[b=a+1;print[b]]
+Table:
+a -> 0
+b -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+a=2+3*5
+[b=a+1;print[b]]
+Table:
+a -> 0
+b -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[b=a+1;print[b]]
+Table:
+a -> 17
+b -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[b=a+1;print[b]]
+Table:
+a -> 17
+b -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+b=a+1
+print[b]
+Table:
+a -> 17
+b -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+b=a+1
+print[b]
+Table:
+a -> 17
+b -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+print[b]
+Table:
+a -> 17
+b -> 18
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+print[b]
+Table:
+a -> 17
+b -> 18
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+Table:
+a -> 17
+b -> 18
+
+Output:
+18
+FileTable:
+Heap:
+

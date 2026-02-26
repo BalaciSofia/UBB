@@ -1,0 +1,8 @@
+C:\ALE MELE\UBB\semester 4\DBMS\lab1\lab1\bin\Debug\lab1.exe.config
+C:\ALE MELE\UBB\semester 4\DBMS\lab1\lab1\bin\Debug\lab1.exe
+C:\ALE MELE\UBB\semester 4\DBMS\lab1\lab1\bin\Debug\lab1.pdb
+C:\ALE MELE\UBB\semester 4\DBMS\lab1\lab1\obj\Debug\lab1.csproj.AssemblyReference.cache
+C:\ALE MELE\UBB\semester 4\DBMS\lab1\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
+C:\ALE MELE\UBB\semester 4\DBMS\lab1\lab1\obj\Debug\lab1.exe
+C:\ALE MELE\UBB\semester 4\DBMS\lab1\lab1\obj\Debug\lab1.pdb
+C:\ALE MELE\UBB\semester 4\DBMS\lab1\lab1\obj\Debug\lab1.exe.config

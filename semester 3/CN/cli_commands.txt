@@ -1,0 +1,92 @@
+--cli commands
+
+--interface configuration
+
+enable
+configure terminal
+interface <GigabitEthernet0/0>
+ip address <ip 192.168.1.1> <mask 255.255.255.0>
+no shutdown
+end
+copy running-config startup-config
+
+
+--static routing
+
+enable
+configure terminal
+ip route <dest NETWORK 192.168.2.0> <mask 255.255.255.0>  <next hop 10.0.0.2>
+end
+copy running-config startup-config
+
+
+--dhcp on router
+
+
+enable
+configure terminal
+ip dhcp excluded-address <range of ip s not to give out from that network 192.168.0.1 192.168.0.10>
+ip dhcp pool <name pool>
+network <network from where to give ips 192.168.0.0> <mask 255.255.255.0>
+default-router <gate for pcs 192.168.0.1>
+dns-server <server s ip 8.8.8.8>
+end
+copy running-config startup-config
+
+--nat
+
+interface <the one from he lan part GigabitEthernet0/0>
+ip nat inside
+exit
+interface <Serial0/0/0>
+ip nat outside
+exit
+
+ip access-list extended <list name>
+        
+	deny ip (to not be affected by nat) <interval 192.168.0.0 0.0.0.127> <interval dest 192.168.0.0 0.0.0.255>
+;cine ii in primu interval si vrea sa ajunga la al doilea interval nu se aplica nat
+
+	permit ip <interval 192.168.0.0 0.0.0.127> any
+;cine ii in interval si vrea sa mearga oriunde se aplica nat 
+
+	permit ip <interval 192.168.0.0 0.0.0.255> <interval 193.231.20.0 0.0.0.255>
+;cine ii in primu interval si vrea sa mearga in al doilea se aplica dat
+	permit ip any any ;allow everything else
+ip nat inside source list <list name> interface <outside interface Serial0/0/0> overload
+end
+copy running-config startup-config
+
+
+--rip(dynamic routing)
+
+enable
+configure terminal
+router rip
+version 2
+;advirtise these networks 
+network <192.168.0.0>
+network <10.0.0.0>
+no auto-summary
+default-information originate
+end
+copy running-config startup-config
+
+
+--stp(prevents layer-2 loops, blocks one redundant link)
+
+enable
+configure terminal
+spanning-tree vlan 1
+end
+copy running-config startup-config
+
+--verification in priority order
+show ip interface brief
+show ip route
+show ip nat translations
+show access-lists
+show spanning-tree
+ping <IP>
+tracert <IP>   (PC)
+

@@ -1,0 +1,1245 @@
+ID:2
+ExeStack:
+[Ref(int) v1;[int cnt;[new(v1,1);[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+Ref(int) v1
+[int cnt;[new(v1,1);[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+Ref(int) v1
+[int cnt;[new(v1,1);[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+[int cnt;[new(v1,1);[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+[int cnt;[new(v1,1);[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+int cnt
+[new(v1,1);[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+int cnt
+[new(v1,1);[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+[new(v1,1);[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+[new(v1,1);[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+new(v1,1)
+[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+new(v1,1)
+[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+SemaphoreTable:
+
+ID:2
+ExeStack:
+[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+
+ID:2
+ExeStack:
+[CreateSemaphore(cnt, ReadHeap(v1));[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+
+ID:2
+ExeStack:
+CreateSemaphore(cnt, ReadHeap(v1))
+[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+
+ID:2
+ExeStack:
+CreateSemaphore(cnt, ReadHeap(v1))
+[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+
+ID:2
+ExeStack:
+[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]);[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]])
+[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]])
+[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:3
+ExeStack:
+[Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+[fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]);[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:3
+ExeStack:
+[Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]])
+[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:3
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+fork([Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]])
+[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:3
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+[Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+[Acquire(cnt);[print(ReadHeap(v1)-1);Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);[print(ReadHeap(v1));Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+[Acquire(cnt);[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+[print(ReadHeap(v1));Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+[print(ReadHeap(v1));Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 1
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+[print(ReadHeap(v1));Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+[print(ReadHeap(v1));Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+print(ReadHeap(v1))
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+print(ReadHeap(v1))
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:3
+ExeStack:
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[3]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[]
+
+ID:3
+ExeStack:
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+Acquire(cnt)
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[]
+
+ID:2
+ExeStack:
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:2
+ExeStack:
+[print(ReadHeap(v1)-1);Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:2
+ExeStack:
+print(ReadHeap(v1)-1)
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:2
+ExeStack:
+print(ReadHeap(v1)-1)
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:2
+ExeStack:
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:2
+ExeStack:
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:4
+ExeStack:
+Acquire(cnt)
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[2]
+
+ID:2
+ExeStack:
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 10
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 100
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*2);[print(ReadHeap(v1));Release(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 100
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*2)
+[print(ReadHeap(v1));Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 100
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*2)
+[print(ReadHeap(v1));Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 100
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+[print(ReadHeap(v1));Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 200
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+[print(ReadHeap(v1));Release(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 200
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+print(ReadHeap(v1))
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 200
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+print(ReadHeap(v1))
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+FileTable:
+Heap:
+1 -> 200
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+200
+FileTable:
+Heap:
+1 -> 200
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+Release(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+200
+FileTable:
+Heap:
+1 -> 200
+SemaphoreTable:
+1 -> 1=[4]
+
+ID:4
+ExeStack:
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+Output:
+10
+9
+200
+FileTable:
+Heap:
+1 -> 200
+SemaphoreTable:
+1 -> 1=[]
+

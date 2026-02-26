@@ -1,0 +1,101 @@
+ID:1
+ExeStack:
+[int v;[v=2;print[v]]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int v
+[v=2;print[v]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+int v
+[v=2;print[v]]
+Table:
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[v=2;print[v]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+[v=2;print[v]]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+v=2
+print[v]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+v=2
+print[v]
+Table:
+v -> 0
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+print[v]
+Table:
+v -> 2
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+print[v]
+Table:
+v -> 2
+
+Output:
+FileTable:
+Heap:
+
+ID:1
+ExeStack:
+Table:
+v -> 2
+
+Output:
+2
+FileTable:
+Heap:
+

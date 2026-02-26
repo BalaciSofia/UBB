@@ -1,0 +1,2146 @@
+ID:1
+ExeStack:
+[Ref(int) v1;[Ref(int) v2;[Ref(int) v3;[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+Ref(int) v1
+[Ref(int) v2;[Ref(int) v3;[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+Ref(int) v1
+[Ref(int) v2;[Ref(int) v3;[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]]]
+Table:
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[Ref(int) v2;[Ref(int) v3;[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[Ref(int) v2;[Ref(int) v3;[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+Ref(int) v2
+[Ref(int) v3;[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+Ref(int) v2
+[Ref(int) v3;[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[Ref(int) v3;[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[Ref(int) v3;[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+Ref(int) v3
+[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+Ref(int) v3
+[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[int cnt;[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+int cnt
+[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+int cnt
+[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]
+Table:
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[new(v1,2);[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+new(v1,2)
+[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+new(v1,2)
+[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(0,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[new(v2,3);[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+new(v2,3)
+[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+new(v2,3)
+[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(0,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[new(v3,4);[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+new(v3,4)
+[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+new(v3,4)
+[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(0,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[newLatch(cnt, ReadHeap(v2));[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+newLatch(cnt, ReadHeap(v2))
+[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+newLatch(cnt, ReadHeap(v2))
+[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]
+Table:
+cnt -> 0
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]);[await(cnt);[print[100];[countDown(cnt);print[100]]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]])
+[await(cnt);[print[100];[countDown(cnt);print[100]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+fork([WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]])
+[await(cnt);[print[100];[countDown(cnt);print[100]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[await(cnt);[print[100];[countDown(cnt);print[100]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[await(cnt);[print[100];[countDown(cnt);print[100]]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+[WriteHeap(v1, ReadHeap(v1)*10);[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+WriteHeap(v1, ReadHeap(v1)*10)
+[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 2
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+[print[ReadHeap(v1)];[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+print[ReadHeap(v1)]
+[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+print[ReadHeap(v1)]
+[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+[countDown(cnt);fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+countDown(cnt)
+fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+countDown(cnt)
+fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+fork([WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]])
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:2
+ExeStack:
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+[WriteHeap(v2, ReadHeap(v2)*10);[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)*10)
+[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+WriteHeap(v2, ReadHeap(v2)*10)
+[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 3
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+[print[ReadHeap(v2)];[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+print[ReadHeap(v2)]
+[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+print[ReadHeap(v2)]
+[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+[countDown(cnt);fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+countDown(cnt)
+fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+countDown(cnt)
+fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+fork([WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]])
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:3
+ExeStack:
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+[WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+[WriteHeap(v3, ReadHeap(v3)*10);[print[ReadHeap(v3)];countDown(cnt)]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+WriteHeap(v3, ReadHeap(v3)*10)
+[print[ReadHeap(v3)];countDown(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+WriteHeap(v3, ReadHeap(v3)*10)
+[print[ReadHeap(v3)];countDown(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 4
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+[print[ReadHeap(v3)];countDown(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+[print[ReadHeap(v3)];countDown(cnt)]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+print[ReadHeap(v3)]
+countDown(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+print[ReadHeap(v3)]
+countDown(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+countDown(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+countDown(cnt)
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:4
+ExeStack:
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+await(cnt)
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[print[100];[countDown(cnt);print[100]]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+print[100]
+[countDown(cnt);print[100]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+print[100]
+[countDown(cnt);print[100]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[countDown(cnt);print[100]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+100
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+[countDown(cnt);print[100]]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+100
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+countDown(cnt)
+print[100]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+100
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+countDown(cnt)
+print[100]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+100
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+print[100]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+100
+1
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+print[100]
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+100
+1
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49ID:1
+ExeStack:
+Table:
+cnt -> 1
+v1 -> RefValue(1,int)
+v2 -> RefValue(2,int)
+v3 -> RefValue(3,int)
+Output:
+20
+2
+30
+3
+40
+4
+100
+1
+100
+FileTable:
+Heap:
+1 -> 20
+2 -> 30
+3 -> 40
+LockTable:
+model.adts.latchADT.MyLatchTable@e368d49

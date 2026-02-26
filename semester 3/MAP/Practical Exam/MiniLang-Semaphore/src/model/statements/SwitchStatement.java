@@ -29,7 +29,6 @@ public class SwitchStatement implements Statement {
     @Override
     public ProgramState execute(ProgramState state) {
         MyStackI<Statement> stack = state.getStack();
-
         Statement newStatement =
                         new IfStatement(
                                 new RelationalExpression(exp, exp1,EQUAL),
@@ -52,14 +51,14 @@ public class SwitchStatement implements Statement {
         if (!expType.equals(exp1Type) || !expType.equals(exp2Type) || !exp1Type.equals(exp2Type)) {
             throw new Exception("Switch statement expressions must be of the same type.");
         }
-        stmt1.typeCheck(typeEnv.clone());
-        stmt2.typeCheck(typeEnv.clone());
-        defaultStmt.typeCheck(typeEnv.clone());
+        stmt1.typeCheck(typeEnv);
+        stmt2.typeCheck(typeEnv);
+        defaultStmt.typeCheck(typeEnv);
         return typeEnv;
     }
 
     @Override
     public String toString() {
-        return "switch("+exp.toString()+") case "+exp1.toString()+": "+stmt1.toString()+" case "+exp2.toString()+": "+stmt2.toString()+" default: "+defaultStmt.toString();
+        return "switch("+exp.toString()+") case ("+exp1.toString()+"): "+stmt1.toString()+" case ("+exp2.toString()+"): "+stmt2.toString()+" default: "+defaultStmt.toString();
     }
 }
