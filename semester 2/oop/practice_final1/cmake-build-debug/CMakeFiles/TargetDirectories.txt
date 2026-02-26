@@ -1,5 +1,0 @@
-C:/Users/balac/OneDrive/Desktop/oop/practice_final1/cmake-build-debug/CMakeFiles/practice_final1.dir
-C:/Users/balac/OneDrive/Desktop/oop/practice_final1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/balac/OneDrive/Desktop/oop/practice_final1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/balac/OneDrive/Desktop/oop/practice_final1/cmake-build-debug/CMakeFiles/practice_final1_autogen_timestamp_deps.dir
-C:/Users/balac/OneDrive/Desktop/oop/practice_final1/cmake-build-debug/CMakeFiles/practice_final1_autogen.dir

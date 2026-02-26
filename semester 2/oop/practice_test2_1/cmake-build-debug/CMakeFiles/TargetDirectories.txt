@@ -1,3 +1,0 @@
-C:/Users/balac/OneDrive/Desktop/oop/practice_test2_1/cmake-build-debug/CMakeFiles/practice_test2_1.dir
-C:/Users/balac/OneDrive/Desktop/oop/practice_test2_1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/balac/OneDrive/Desktop/oop/practice_test2_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

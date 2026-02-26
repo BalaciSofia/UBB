@@ -1,3 +1,0 @@
-Dr. Smith,E.coli;Streptococcus;Bacillus
-Dr. Johnson,Lactobacillus;E.coli;Clostridium
-Dr. Carter,Salmonella;Bacillus;Staphylococcus

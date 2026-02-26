@@ -1,3 +1,0 @@
-C:/Users/balac/OneDrive/Desktop/graphs/a1-cpp/cmake-build-debug/CMakeFiles/a1_cpp.dir
-C:/Users/balac/OneDrive/Desktop/graphs/a1-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/balac/OneDrive/Desktop/graphs/a1-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

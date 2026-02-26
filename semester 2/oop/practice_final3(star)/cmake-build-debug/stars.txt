@@ -1,6 +1,0 @@
-Betelgeuse,Orion,88,7,700,
-Rigel,Orion,78,-8,500,
-Schedar,Cassiopeia,10,56,150,
-Caph,Cassiopeia,6,59,120,
-Thuban,Draco,15,65,80,
-Eltanin,Draco,17,51,130,
