@@ -1,1 +1,30 @@
-/semester 3/MAP/MiniLang/out/
+# --- binaries / executables ---
+*.exe
+*.dll
+*.so
+*.dylib
+
+# --- common build outputs ---
+bin/
+out/
+target/
+build/
+dist/
+
+# --- Java / IntelliJ ---
+*.class
+*.jar
+.idea/
+*.iml
+
+# --- C/C++ ---
+*.o
+*.obj
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
