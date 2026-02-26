@@ -1,1 +1,89 @@
-/semester 3/MAP/MiniLang/out/
+############################
+# OS
+############################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+############################
+# General temporary files
+############################
+*~
+*.tmp
+*.swp
+*.log
+
+############################
+# Executables / Build artifacts
+############################
+*.exe
+*.dll
+*.so
+*.dylib
+*.obj
+*.o
+*.a
+*.out
+*.class
+*.lst
+
+############################
+# Build folders
+############################
+bin/
+obj/
+out/
+build/
+dist/
+target/
+
+############################
+# CMake
+############################
+cmake-build-debug/
+cmake-build-release/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+############################
+# IntelliJ / JetBrains
+############################
+.idea/
+*.iml
+
+############################
+# Visual Studio
+############################
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+############################
+# Python
+############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+############################
+# Prolog temp files
+############################
+*~.pl
+*.pl~
+
+############################
+# ASM tools (keep homework only)
+############################
+semester 1/asc/asm_tools/nasm*/
+semester 1/asc/asm_tools/npp*/
+semester 1/asc/asm_tools/ollydbg*/
+
+############################
+# VS Code (if used)
+############################
+.vscode/
