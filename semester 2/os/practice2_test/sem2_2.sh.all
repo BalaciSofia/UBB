@@ -1,0 +1,17 @@
+#!/bin/bash
+#2. Pentru fiecare parametru din linia de comandă: dacă e fișier, se vor afișa numele, numărul de caractere și de linii din el (în această ordine), iar dacă e director, numele și câte fișiere conține (inclusiv în subdirectoarele sale).
+
+while test $# -gt 0;do
+	if test -f $1;then
+		echo "name:$1"
+		wc -m "$1" | awk '{print "number of characters:",$1}'
+		wc -l "$1" | awk '{print "number of lines:",$1}'
+	elif test -d $1;then
+		echo "name:$1"
+		echo "total files:"
+		find "$1" -type f| wc -l
+
+	fi	
+	shift 1
+
+done

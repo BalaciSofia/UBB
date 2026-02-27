@@ -1,0 +1,13 @@
+#!/bin/bash
+#1. Să se scrie un script bash care primeşte ca argument un număr natural N şi generează N fişiere de tip text, astfel:
+#numele fişierelor vor fi de forma: file_X.txt, unde X = {1, 2, ..., N}
+#fiecare fişier generat va conţine doar liniile de la X la X + 5 ale fişierului passwd.fake
+
+N=1
+while test $N -le $1;do
+	file_name="file_$N.txt"
+	s=$N
+	e=$((N+5))
+	sed -E -n "$s,$e p" paswd.fake >"$file_name"
+	N=$((N+1))
+done
