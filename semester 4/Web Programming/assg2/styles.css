@@ -1,0 +1,285 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.full-page {
+    margin: 0 30px;
+    padding: 0 0px;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-bottom: 2px solid #0a0000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.menu-button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.menu-button:hover{
+    opacity: 60%;
+}
+
+.menu-icon {
+    width: 18px;
+}
+
+.long-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: black;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+.short-line {
+    display: block;
+    width: 60%;
+    height: 2px;
+    background: black;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+.logo {
+    width: 56px;
+    height: 34px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-size: 15px;
+}
+.main-nav a:hover{
+    text-decoration: underline;
+}
+
+.more-dropdown {
+    border: none;
+    border-radius: 12px;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+
+.red-dot {
+    color: #cc0000;
+    font-size: 18px;
+}
+
+.listen-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: black;
+}
+
+.listen-link:hover {
+    text-decoration: underline;
+}
+.watch-link:hover{
+        text-decoration: underline;
+}
+.headphones-icon {
+    width: 20px;
+    height: 16px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.search-icon:hover {
+    opacity: 70%;
+}
+
+.sign-in-button {
+    border: 1px solid #ded9d9;
+    border-radius: 8px;
+    font-weight: 550;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 6px 10px;
+    background-color: #ffffff;
+}
+
+.sign-in-button:hover {
+    background-color: #c4c1c1;
+}
+
+.news-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 40px;
+    margin: 20px 0px;
+}
+
+
+.news-strip {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    overflow: hidden;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.news-strip a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+.news-strip a:hover{
+    text-decoration: underline;
+}
+.news-strip span {
+    color: #999;
+    font-weight: 700;
+}
+
+.strip-arrow {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 0.90fr 1.8fr 0.90fr;
+    gap: 38px;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.side-news {
+    padding-top: 12px;
+}
+
+.side-news h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.side-news h3:hover{
+    text-decoration: underline;
+}
+
+.side-news a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.side-image {
+    width: 100%;
+    height: 150px;
+    background: #f4abe0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.side-image:hover{
+    opacity:60%;
+}
+
+.main-news h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.main-news h1:hover{
+    text-decoration: underline;
+}
+
+.main-news a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-image {
+    width: 100%;
+    height: 330px;
+    background: #f4abe0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.main-image:hover{
+    opacity:60%;
+}
+
+.related-news {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.related-news li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.related-news a {
+    color: #000000;
+    text-decoration: none;
+}
+.related-news a:hover{
+    text-decoration: underline;
+}
+
+.related-news li strong {
+    font-weight: 700;
+}
