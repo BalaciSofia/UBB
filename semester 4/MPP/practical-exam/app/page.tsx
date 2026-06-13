@@ -1,86 +1,76 @@
 "use client";
 
 import Image from "next/image";
-import { faker } from "@faker-js/faker";
-import { useMemo, useState } from "react";
-
-type Article = {
-  id: string;
-  title: string;
-  date: string;
-  eyebrow: string;
-  author: string;
-  summary: string;
-  body: string[];
-};
-
-function createArticles(): Article[] {
-  faker.seed(13062026);
-
-  return Array.from({ length: 9 }, (_, index) => {
-    const topic = faker.helpers.arrayElement([
-      "mental heat",
-      "urban exhaustion",
-      "public anxiety",
-      "silent overthinking",
-      "office pressure",
-      "collective focus",
-      "late-night reasoning",
-      "intellectual fatigue",
-      "nervous ambition",
-    ]);
-    const place = faker.location.city();
-    const expert = faker.person.fullName();
-    const title =
-      index === 0
-        ? "The Brain That Sweats When Ideas Run Too Fast"
-        : faker.helpers.arrayElement([
-            `Researchers Map the Hidden Climate of ${faker.word.adjective()} Thoughts`,
-            `Inside ${place}'s New Debate About ${faker.word.adjective()} Pressure`,
-            `Why ${faker.word.adjective()} Ideas Leave a Trace on the Mind`,
-            `A Small Theory of ${faker.word.adjective()} Focus Becomes Front Page News`,
-            `The Long Afternoon When ${topic} Took Over the City`,
-          ]);
-
-    return {
-      id: faker.string.uuid(),
-      title,
-      date: faker.date.recent({ days: 30 }).toLocaleDateString("en-US", {
-        day: "2-digit",
-        month: "long",
-        year: "numeric",
-      }),
-      eyebrow: faker.helpers.arrayElement([
-        "Investigation",
-        "Editorial",
-        "Field Report",
-        "Urban Chronicle",
-        "Science of Fatigue",
-      ]),
-      author: faker.person.fullName(),
-      summary: `A new report from ${place} follows how ${topic} shapes ordinary decisions, difficult conversations, and the strange feeling that every idea has its own temperature.`,
-      body: [
-        `Witnesses describe the phenomenon as subtle at first. Meetings grow quieter, notebooks fill faster, and people begin to notice that concentration has a physical weight. According to ${expert}, the theory is less about sweat itself and more about the moment when thought becomes effort.`,
-        `The newspaper's sources say the pattern appears most clearly during long debates, crowded mornings, and decisions that refuse to become simple. In those moments, ${topic} turns from a private sensation into a public mood, visible in pauses, revisions, and careful glances across the room.`,
-        `Critics argue that the theory is too theatrical, but supporters believe it gives language to a common experience. They point to students, clerks, editors, and commuters who all describe the same pressure: the mind working hard enough to change the atmosphere around it.`,
-        `For now, the evidence remains informal, but the story keeps spreading. Each new account adds another detail to the archive, suggesting that the border between thinking and feeling may be thinner than anyone expected.`,
-      ],
-    };
-  });
-}
+import { useEffect, useState } from "react";
+import type { Article, ArticleSummary } from "@/src/domain/article";
 
 export default function Home() {
-  const articles = useMemo(() => createArticles(), []);
+  const [articles, setArticles] = useState<ArticleSummary[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const selectedArticle =
-    articles.find((article) => article.id === selectedId) ?? null;
+  const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
+  const [isLoadingArticles, setIsLoadingArticles] = useState(true);
+  const [isLoadingArticle, setIsLoadingArticle] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function loadArticles() {
+      try {
+        const response = await fetch("/api/articles");
+
+        if (!response.ok) {
+          throw new Error("Could not load articles.");
+        }
+
+        setArticles(await response.json());
+      } catch {
+        setError("The newspaper archive could not be loaded.");
+      } finally {
+        setIsLoadingArticles(false);
+      }
+    }
+
+    loadArticles();
+  }, []);
+
+  async function selectArticle(id: string) {
+    setSelectedId(id);
+    setSelectedArticle(null);
+    setIsLoadingArticle(true);
+    setError(null);
+
+    try {
+      const response = await fetch(`/api/articles/${id}`);
+
+      if (!response.ok) {
+        throw new Error("Could not load article.");
+      }
+
+      setSelectedArticle(await response.json());
+    } catch {
+      setSelectedId(null);
+      setError("The selected article could not be loaded.");
+    } finally {
+      setIsLoadingArticle(false);
+    }
+  }
 
   return (
     <main className="newspaper-shell">
       <section className="masthead-panel" aria-label="Selected article">
-        {selectedArticle ? (
+        {isLoadingArticle ? (
+          <div className="brand-stage">
+            <p className="kicker">Loading</p>
+            <h1>Fetching the article</h1>
+          </div>
+        ) : selectedArticle ? (
           <article className="article-detail">
-            <button className="ghost-button" onClick={() => setSelectedId(null)}>
+            <button
+              className="ghost-button"
+              onClick={() => {
+                setSelectedId(null);
+                setSelectedArticle(null);
+              }}
+            >
               Back to the front page
             </button>
             <p className="eyebrow">{selectedArticle.eyebrow}</p>
@@ -119,6 +109,10 @@ export default function Home() {
           <span>Latest articles</span>
           <strong>{articles.length}</strong>
         </div>
+        {error ? <p className="menu-message">{error}</p> : null}
+        {isLoadingArticles ? (
+          <p className="menu-message">Loading articles...</p>
+        ) : null}
         <nav>
           {articles.map((article) => (
             <button
@@ -126,7 +120,7 @@ export default function Home() {
                 selectedId === article.id ? "active" : ""
               }`}
               key={article.id}
-              onClick={() => setSelectedId(article.id)}
+              onClick={() => selectArticle(article.id)}
             >
               <span>{article.title}</span>
               <time>{article.date}</time>
