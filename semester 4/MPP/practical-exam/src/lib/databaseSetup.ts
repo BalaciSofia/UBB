@@ -61,6 +61,12 @@ async function setupDatabase() {
       paragraph_id INTEGER NOT NULL REFERENCES paragraphs(id) ON DELETE CASCADE,
       path TEXT NOT NULL
     );
+
+    CREATE TABLE IF NOT EXISTS comments (
+      id SERIAL PRIMARY KEY,
+      paragraph_id INTEGER NOT NULL REFERENCES paragraphs(id) ON DELETE CASCADE,
+      text TEXT NOT NULL
+    );
   `);
 
   await pool.query(`
@@ -137,6 +143,12 @@ async function setupDatabase() {
         ],
       );
     }
+  }
+
+  for (const article of createSeedArticles()) {
+    await pool.query("UPDATE articles SET status = 'finished' WHERE id = $1", [
+      article.id,
+    ]);
   }
 
   await seedArticleParagraphsAndJournalists();

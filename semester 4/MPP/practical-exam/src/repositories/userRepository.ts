@@ -24,6 +24,37 @@ function mapUser(row: UserRow): AuthUser {
 }
 
 class UserRepository {
+  async findById(id: number): Promise<AuthUser | undefined> {
+    await ensureDatabaseReady();
+
+    const result = await pool.query<UserRow>(
+      `SELECT users.id, users.username, roles.id AS role_id,
+        roles.name AS role_name, roles.color AS role_color
+       FROM users
+       JOIN roles ON roles.id = users.role_id
+       WHERE users.id = $1`,
+      [id],
+    );
+
+    return result.rows[0] ? mapUser(result.rows[0]) : undefined;
+  }
+
+  async findByRole(roleName: RoleName): Promise<AuthUser[]> {
+    await ensureDatabaseReady();
+
+    const result = await pool.query<UserRow>(
+      `SELECT users.id, users.username, roles.id AS role_id,
+        roles.name AS role_name, roles.color AS role_color
+       FROM users
+       JOIN roles ON roles.id = users.role_id
+       WHERE roles.name = $1
+       ORDER BY users.username ASC`,
+      [roleName],
+    );
+
+    return result.rows.map(mapUser);
+  }
+
   async findByCredentials(
     username: string,
     password: string,
@@ -49,21 +80,22 @@ class UserRepository {
   ): Promise<AuthUser> {
     await ensureDatabaseReady();
 
-    const result = await pool.query<UserRow>(
+    const result = await pool.query<{ id: number }>(
       `INSERT INTO users (username, password, role_id)
        SELECT $1, $2, id
        FROM roles
        WHERE name = $3
-       RETURNING
-        id,
-        username,
-        role_id,
-        (SELECT name FROM roles WHERE id = role_id) AS role_name,
-        (SELECT color FROM roles WHERE id = role_id) AS role_color`,
+       RETURNING id`,
       [username, password, roleName],
     );
 
-    return mapUser(result.rows[0]);
+    const user = await this.findById(result.rows[0].id);
+
+    if (!user) {
+      throw new Error("Created user could not be loaded.");
+    }
+
+    return user;
   }
 }
 
