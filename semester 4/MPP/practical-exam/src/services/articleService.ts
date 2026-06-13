@@ -1,11 +1,11 @@
 import { articleRepository } from "@/src/repositories/articleRepository";
 
 class ArticleService {
-  getArticles() {
+  async getArticles() {
     return articleRepository.findAll();
   }
 
-  getArticleById(id: string) {
+  async getArticleById(id: string) {
     return articleRepository.findById(id);
   }
 }

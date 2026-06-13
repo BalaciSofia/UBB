@@ -45,6 +45,23 @@ button {
   gap: 0;
   height: 100vh;
   overflow: hidden;
+  transition: background-color 180ms ease;
+}
+
+.role-red {
+  background: rgba(198, 40, 40, 0.16);
+}
+
+.role-yellow {
+  background: rgba(245, 183, 0, 0.2);
+}
+
+.role-blue {
+  background: rgba(36, 99, 166, 0.18);
+}
+
+.role-green {
+  background: rgba(46, 125, 50, 0.16);
 }
 
 .masthead-panel {
@@ -54,6 +71,7 @@ button {
   overflow: hidden;
   place-items: center;
   padding: 48px;
+  position: relative;
 }
 
 .brand-stage,
@@ -244,6 +262,105 @@ button {
   background: var(--blue-soft);
 }
 
+.auth-panel {
+  display: grid;
+  gap: 10px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: min(360px, calc(100% - 48px));
+  z-index: 2;
+}
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.account-button,
+.auth-tabs button,
+.auth-form button,
+.auth-form input,
+.auth-form select {
+  border: 1px solid var(--line);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  min-height: 38px;
+}
+
+.account-button,
+.auth-tabs button,
+.auth-form button {
+  background: var(--gray-soft);
+  color: var(--blue-dark);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.account-button {
+  justify-self: end;
+  padding: 0 14px;
+}
+
+.account-button:hover,
+.auth-tabs button.active,
+.auth-form button:hover {
+  background: var(--blue);
+  color: white;
+}
+
+.auth-form {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+}
+
+.auth-form input,
+.auth-form select {
+  background: white;
+  color: var(--ink);
+  padding: 0 10px;
+}
+
+.session-badge,
+.auth-message {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin: 10px 0 0;
+}
+
+.session-badge {
+  color: white;
+  display: inline-block;
+  font-weight: 800;
+  padding: 6px 9px;
+}
+
+.session-badge.red {
+  background: #c62828;
+}
+
+.session-badge.yellow {
+  background: #c58b00;
+}
+
+.session-badge.blue {
+  background: #2463a6;
+}
+
+.session-badge.green {
+  background: #2e7d32;
+}
+
+.auth-message {
+  color: var(--muted);
+}
+
 @media (max-width: 860px) {
   body {
     overflow: auto;
@@ -261,7 +378,7 @@ button {
     height: auto;
     min-height: 62vh;
     overflow: visible;
-    padding: 32px 20px;
+    padding: 190px 20px 32px;
   }
 
   .news-menu {
@@ -278,5 +395,12 @@ button {
     max-height: none;
     overflow: visible;
     padding: 26px 20px;
+  }
+
+  .auth-panel {
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    width: auto;
   }
 }

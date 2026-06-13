@@ -1,27 +1,53 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import type { Article, ArticleSummary } from "@/src/domain/article";
+import type { Role } from "@/src/domain/role";
+import type { AuthUser } from "@/src/domain/user";
+
+type AuthMode = "login" | "register";
+
+const defaultCredentials = {
+  username: "",
+  password: "",
+};
 
 export default function Home() {
   const [articles, setArticles] = useState<ArticleSummary[]>([]);
+  const [roles, setRoles] = useState<Role[]>([]);
+  const [currentUser, setCurrentUser] = useState<AuthUser | null>(null);
+  const [authMode, setAuthMode] = useState<AuthMode>("login");
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
+  const [credentials, setCredentials] = useState(defaultCredentials);
+  const [selectedRole, setSelectedRole] = useState("user");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
   const [isLoadingArticles, setIsLoadingArticles] = useState(true);
   const [isLoadingArticle, setIsLoadingArticle] = useState(false);
+  const [isSubmittingAuth, setIsSubmittingAuth] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [authMessage, setAuthMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    async function loadArticles() {
+    async function loadInitialData() {
       try {
-        const response = await fetch("/api/articles");
+        const [articlesResponse, rolesResponse] = await Promise.all([
+          fetch("/api/articles"),
+          fetch("/api/roles"),
+        ]);
 
-        if (!response.ok) {
+        if (!articlesResponse.ok) {
           throw new Error("Could not load articles.");
         }
 
-        setArticles(await response.json());
+        setArticles(await articlesResponse.json());
+
+        if (rolesResponse.ok) {
+          const availableRoles: Role[] = await rolesResponse.json();
+          setRoles(availableRoles);
+          setSelectedRole(availableRoles[0]?.name ?? "user");
+        }
       } catch {
         setError("The newspaper archive could not be loaded.");
       } finally {
@@ -29,7 +55,7 @@ export default function Home() {
       }
     }
 
-    loadArticles();
+    loadInitialData();
   }, []);
 
   async function selectArticle(id: string) {
@@ -54,9 +80,126 @@ export default function Home() {
     }
   }
 
+  async function submitAuth(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setIsSubmittingAuth(true);
+    setAuthMessage(null);
+
+    const endpoint =
+      authMode === "login" ? "/api/auth/login" : "/api/auth/register";
+    const payload =
+      authMode === "login"
+        ? credentials
+        : { ...credentials, role: selectedRole };
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      const body = await response.json();
+
+      if (!response.ok) {
+        throw new Error(body.message ?? "Authentication failed.");
+      }
+
+      setCurrentUser(body);
+      setCredentials(defaultCredentials);
+      setAuthMessage(`Logged in as ${body.username}.`);
+    } catch (authError) {
+      setAuthMessage(
+        authError instanceof Error
+          ? authError.message
+          : "Authentication failed.",
+      );
+    } finally {
+      setIsSubmittingAuth(false);
+    }
+  }
+
   return (
-    <main className="newspaper-shell">
+    <main
+      className={`newspaper-shell role-${
+        currentUser?.role.color ?? "neutral"
+      }`}
+    >
       <section className="masthead-panel" aria-label="Selected article">
+        <div className="auth-panel">
+          <button
+            className="account-button"
+            onClick={() => setIsAuthOpen((current) => !current)}
+          >
+            {currentUser ? "Account" : "Login / Register"}
+          </button>
+          {isAuthOpen ? (
+            <>
+              <div className="auth-tabs">
+                <button
+                  className={authMode === "login" ? "active" : ""}
+                  onClick={() => setAuthMode("login")}
+                >
+                  Login
+                </button>
+                <button
+                  className={authMode === "register" ? "active" : ""}
+                  onClick={() => setAuthMode("register")}
+                >
+                  Register
+                </button>
+              </div>
+              <form onSubmit={submitAuth} className="auth-form">
+                <input
+                  aria-label="Username"
+                  placeholder="Username"
+                  value={credentials.username}
+                  onChange={(event) =>
+                    setCredentials((current) => ({
+                      ...current,
+                      username: event.target.value,
+                    }))
+                  }
+                />
+                <input
+                  aria-label="Password"
+                  placeholder="Password"
+                  type="password"
+                  value={credentials.password}
+                  onChange={(event) =>
+                    setCredentials((current) => ({
+                      ...current,
+                      password: event.target.value,
+                    }))
+                  }
+                />
+                {authMode === "register" ? (
+                  <select
+                    aria-label="Role"
+                    value={selectedRole}
+                    onChange={(event) => setSelectedRole(event.target.value)}
+                  >
+                    {roles.map((role) => (
+                      <option key={role.id} value={role.name}>
+                        {role.name}
+                      </option>
+                    ))}
+                  </select>
+                ) : null}
+                <button type="submit" disabled={isSubmittingAuth}>
+                  {isSubmittingAuth ? "Please wait" : authMode}
+                </button>
+              </form>
+            </>
+          ) : null}
+          {currentUser ? (
+            <p className={`session-badge ${currentUser.role.color}`}>
+              {currentUser.username} · {currentUser.role.name}
+            </p>
+          ) : null}
+          {authMessage ? <p className="auth-message">{authMessage}</p> : null}
+        </div>
         {isLoadingArticle ? (
           <div className="brand-stage">
             <p className="kicker">Loading</p>
