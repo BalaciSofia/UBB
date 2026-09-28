@@ -14,7 +14,7 @@ public:
     Astronomer()=default;
     Astronomer(std::string name, std::string constellation);
     std::string get_name();
-    std::string get_constellation();
+    std::string get_constellation() const;
 
     void set_constellation(std::string constellation);
     void set_name(std::string name);

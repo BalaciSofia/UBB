@@ -1,6 +1,7 @@
 //
 // Created by balac on 6/17/2025.
 //
+#include <QSortFilterProxyModel>
 
 #ifndef ASTRONOMERWINDOW_H
 #define ASTRONOMERWINDOW_H
@@ -22,7 +23,7 @@ private:
     Service& service;
     tablemodel* model;
     Ui::AstronomerWindow *ui;
-
+    QSortFilterProxyModel* proxyModel;
 public:
     explicit AstronomerWindow(Astronomer astronomer,Service &service,tablemodel *model, QWidget *parent = nullptr);
     ~AstronomerWindow() override;

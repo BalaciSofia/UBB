@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h2>Reservations</h2>
+
+<p>Name: @Context.Session.GetString("person")</p>
+<p>Date: @Context.Session.GetString("date")</p>
+<p>Destination: @Context.Session.GetString("destinationCity")</p>
+
+<a asp-controller="Main" asp-action="Flights">Flights</a>
+<a asp-controller="Main" asp-action="Hotels">Hotels</a>
+<a asp-controller="Main" asp-action="CancelAll">Cancel All Reservations</a>

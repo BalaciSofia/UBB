@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<Hotel>
+
+@{
+    ViewData["Title"] = "Hotels";
+}
+
+<h2>Available hotels</h2>
+
+<p>Date: @Context.Session.GetString("date")</p>
+<p>Destination: @Context.Session.GetString("destinationCity")</p>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Hotel name</th>
+        <th>Date</th>
+        <th>Destination</th>
+        <th>Available rooms</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var hotel in Model)
+    {
+        <tr>
+            <td>@hotel.getId()</td>
+            <td>@hotel.getHotelName()</td>
+            <td>@hotel.getDate().ToString("yyyy-MM-dd")</td>
+            <td>@hotel.getCity()</td>
+            <td>@hotel.getAvailableRooms()</td>
+            <td>
+                <form method="post" asp-controller="Main" asp-action="Reserve">
+                    <input type="hidden" name="id" value="@hotel.getId()" />
+					<input type="hidden" name="type" value="hotel" />
+                    <button type="submit">Reserve</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+
+<a asp-controller="Main" asp-action="Home">Back</a>
+

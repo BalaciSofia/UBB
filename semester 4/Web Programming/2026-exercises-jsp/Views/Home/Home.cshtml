@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model HomeViewModel
+
+@if (Model.MasteryBanner != null)
+{
+    <div class="alert alert-success" role="alert">
+        @Model.MasteryBanner
+    </div>
+}
+
+<h1>score map</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>topic</th>
+        <th>score</th>
+    </tr>
+
+    @foreach (var score in Model.ScoreMap.OrderBy(score => score.Value))
+    {
+        string rowColor = score.Value < 40 ? "#f8d7da" : score.Value < 70 ? "#fff3cd" : "#d1e7dd";
+        <tr style="background-color: @rowColor;">
+            <td>@score.Key</td>
+            <td>@score.Value</td>
+        </tr>
+    }
+</table>
+
+@if (Model.Exercise != null)
+{
+    <h2>exercise</h2>
+    <p>@Model.Exercise.Prompt</p>
+
+    <form method="post" asp-controller="Home" asp-action="SubmitAnswer">
+        <input type="text" name="response" required />
+        <button type="submit">Submit question</button>
+    </form>
+}
+else
+{
+    <p>No exercise available.</p>
+}
+
+<h2>attempt log</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>exercise prompt</th>
+        <th>your answer</th>
+        <th>correct</th>
+        <th>date</th>
+    </tr>
+
+    @foreach (var attempt in Model.AttemptLog)
+    {
+        <tr>
+            <td>@attempt.Prompt</td>
+            <td>@attempt.GivenAnswer</td>
+            <td>@(attempt.Correct ? "Yes" : "No")</td>
+            <td>@attempt.AttemptedAt</td>
+        </tr>
+    }
+</table>

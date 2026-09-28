@@ -1,0 +1,29 @@
+<!-- Write a HTML page which contains two lists (each with more then one line - use <select> tag). 
+    Double click event on an element from the first list will move this element into the 
+    second one, and reverse. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>o pagina</title>
+</head>
+
+<body>
+    <select id="1" multiple ondblclick="moveMiauToHam()">
+        <option>miau</option>
+        <option>miau</option>
+        <option>miau</option>
+        <option>miau</option>
+    </select>
+    <select id="2" multiple ondblclick="moveHamToMiau()">
+        <option>ham</option>
+        <option>ham</option>
+        <option>ham</option>
+        <option>ham</option>
+        <option>ham</option>
+    </select>
+
+</body>
+<script src="script.js"></script>
+
+</html>

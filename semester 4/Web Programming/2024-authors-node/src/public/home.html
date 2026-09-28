@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h2>my creations</h2>
+        <table border="1">
+            <thead>
+                <th>type</th>
+                <th>id</th>
+                <th>name/title</th>
+                <th>duration</th>
+                <th>contents</th>
+            </thead>
+            <tbody id="my-creations">
+            </tbody>
+            
+        </table>
+
+        <form  method="post" action="/add-document">
+            <input type="text" name="name" placeholder="Name" required><br>
+            <input type="text" name="contents" placeholder="Contents" required><br>
+            <input type="submit" value="Add Document">
+        </form>
+
+       <h3>Documents with largest number of authors</h3>
+<p>Number of authors: <span id="max-authors-value"></span></p>
+<div id="max-authors"></div>
+
+<form  method="post" action="/delete-movie">
+            <input type="text" name="movieId" placeholder="Movie ID" required><br>
+            <input type="submit" value="Delete Movie">
+        </form>
+<script src="home.js"></script>
+    </body>
+</html>

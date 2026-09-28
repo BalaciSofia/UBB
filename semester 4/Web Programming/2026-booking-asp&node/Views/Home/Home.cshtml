@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @model List<ClassPlus>
+}
+<h1>Welcome to the Home Page</h1>
+
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>class name</th>
+        <th>instructor name</th>
+        <th>date</th>
+        <th>max cap</th>
+        <th>available</th>
+    </tr>
+
+    @foreach (var classPlus in Model)
+    {
+        <tr>
+            <td>@classPlus.Id</td>
+            <td>@classPlus.className</td>
+            <td>@classPlus.instructorName</td>
+            <td>@classPlus.classDate.ToString("yyyy-MM-dd")</td>
+            <td>@classPlus.maxCapacity</td>
+            <td>@classPlus.available</td>
+            <td>
+                <form method="post" asp-controller="Home" asp-action="Book">
+                    <input type="hidden" name="classID" value="@classPlus.Id" />
+                    <input type="hidden" name="userID" value="@Context.Session.GetInt32("id")"/>
+                    <button type="submit">Book</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+@if (TempData["Message"] != null)
+{
+    <p style="color:green">@TempData["Message"]</p>
+}

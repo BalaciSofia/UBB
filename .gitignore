@@ -87,3 +87,24 @@ semester 1/asc/asm_tools/ollydbg*/
 # VS Code (if used)
 ############################
 .vscode/
+
+############################
+# Dependencies / environments
+############################
+node_modules/
+.venv/
+venv/
+.pytest_cache/
+
+############################
+# Generated data
+############################
+*.pickle
+*.mv.db
+*.trace.db
+
+############################
+# Large files (too big for GitHub)
+############################
+semester 2/graphs/*/graph1m.txt
+semester 4/Web Programming/assg1/resources/*.mp4

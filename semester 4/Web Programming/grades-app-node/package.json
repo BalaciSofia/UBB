@@ -1,0 +1,23 @@
+{
+  "name": "grades-app-node",
+  "version": "1.0.0",
+  "description": "Node.js backend for the grades management application",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "scripts": {
+  "start": "node src/index.js",
+  "dev": "nodemon src/index.js"
+}
+}

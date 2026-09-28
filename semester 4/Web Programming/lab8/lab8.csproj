@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DefaultItemExcludes>$(DefaultItemExcludes);bin\**;obj\**;**\bin\**;**\obj\**;.build\**;**\.build\**;.artifacts\**;**\.artifacts\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**;obj\**;**\bin\**;**\obj\**;.build\**;**\.build\**;.artifacts\**;**\.artifacts\**" />
+    <Content Remove="bin\**;obj\**;**\bin\**;**\obj\**;.build\**;**\.build\**;.artifacts\**;**\.artifacts\**" />
+    <EmbeddedResource Remove="bin\**;obj\**;**\bin\**;**\obj\**;.build\**;**\.build\**;.artifacts\**;**\.artifacts\**" />
+    <None Remove="bin\**;obj\**;**\bin\**;**\obj\**;.build\**;**\.build\**;.artifacts\**;**\.artifacts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.4.0" />
+  </ItemGroup>
+
+</Project>

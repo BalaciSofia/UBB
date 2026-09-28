@@ -10,9 +10,10 @@ std::string Astronomer::get_name() {
     return name;
 }
 
-std::string Astronomer::get_constellation() {
+std::string Astronomer::get_constellation() const{
     return constellation;
 }
+
 void Astronomer::set_name(std::string name) {
     this->name = name;
 }

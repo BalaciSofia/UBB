@@ -1,0 +1,22 @@
+USE mockZooManagement;
+
+--A1
+BEGIN TRANSACTION;
+    UPDATE Staff
+    SET Role = 'Director'
+    WHERE StaffID = 8;
+
+--B1
+--fix: SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SELECT StaffID, FirstName, LastName, Role
+FROM Staff
+WHERE StaffID = 8;
+
+--A2
+ROLLBACK TRANSACTION;
+
+--B2
+SELECT StaffID, FirstName, LastName, Role
+FROM Staff
+WHERE StaffID = 8;

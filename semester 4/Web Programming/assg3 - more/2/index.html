@@ -1,0 +1,43 @@
+<!-- Write a HTML page which displays a list of images. The images will be displayed one after another like a slideshow. The user will have the following possibility:
+- to press a play/pause button;
+- to select a checkbox which will replay the slideshow after displaying the last picture;
+- to select a numeric value from a combo box which indicates the images changing time. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>page</title>
+    <style>
+        .slideshow-container img{
+            width:400px;
+            height:300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <img id="slideImage" src="pics/cat1.jpg">
+    </div>
+
+    <div class="controls">
+        <button id="playPauseBtn">Play</button>
+
+        <label>
+            <input type="checkbox" id="repeatCheckbox">
+            Replay slideshow
+        </label>
+
+        <label for="timeSelect">Change time:</label>
+        <select id="timeSelect">
+            <option value="1000">1 second</option>
+            <option value="2000" selected>2 seconds</option>
+            <option value="3000">3 seconds</option>
+            <option value="5000">5 seconds</option>
+        </select>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

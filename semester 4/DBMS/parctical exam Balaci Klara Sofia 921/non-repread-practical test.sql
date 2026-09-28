@@ -1,0 +1,19 @@
+use company
+--A1
+BEGIN TRANSACTION;
+SELECT *
+FROM TaskTypes
+WHERE TaskTypeID = 1;
+
+--B
+BEGIN TRANSACTION;
+    UPDATE TaskTypes
+    SET name='technical'
+    WHERE TaskTypeID = 1;
+COMMIT TRANSACTION;
+
+--A2
+SELECT *
+FROM TaskTypes
+WHERE TaskTypeID = 1;
+COMMIT TRANSACTION;

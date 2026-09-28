@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Home</h1>
+
+        <h2>Muscle group scores</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Muscle group</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="score-map">
+            </tbody>
+        </table>
+
+        <div id="move"></div>
+        <form id="move-form">
+            <input type="text" name="completed" placeholder="0-skip 1-done" required><br>
+            <button>submit</button>
+        </form>
+
+        <h2>Past sessions</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Move</th>
+                    <th>Muscle group</th>
+                    <th>Difficulty</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tbody id="sessions-log">
+            </tbody>
+        </table>
+        <a href="summary.html">go to summary</a>
+        <script src="home.js"></script>
+    </body>
+</html>
