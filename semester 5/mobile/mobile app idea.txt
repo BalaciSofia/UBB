@@ -1,0 +1,13 @@
+mobile app idea
+
+one entity that shall be persisted with at least 5 fields
+crud for it?
+at least 3 operations are persisted on the server and the local DB
+separate scenario for offline crud
+
+
+
+
+--mock app=>2+ss stich?
+
+timetable app
