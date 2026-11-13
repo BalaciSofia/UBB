@@ -1,0 +1,69 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+/adddialog.cpp
+/adddialog.h
+/adddialog.ui
+/adminwindow.cpp
+/adminwindow.h
+/adminwindow.ui
+/adoptdog.cpp
+/adoptdog.h
+/adoptdog.ui
+/chart.cpp
+/chart.h
+/chart.ui
+/CMakeLists.txt
+/controller_admin.cpp
+/controller_admin.h
+/controller_user.cpp
+/controller_user.h
+/displaydogs.cpp
+/displaydogs.h
+/displaydogs.ui
+/domain.cpp
+/domain.h
+/htmlorcsv.cpp
+/htmlorcsv.h
+/htmlorcsv.ui
+/main.cpp
+/mainwindow.h
+/mainwindow.cpp
+/mainwindow.ui
+/repo.cpp
+/repo.h
+/updatedialog.cpp
+/updatedialog.h
+/updatedialog.ui
+/userwindow.cpp
+/userwindow.h
+/userwindow.ui

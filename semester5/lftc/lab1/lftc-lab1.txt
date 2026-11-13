@@ -1,0 +1,32 @@
+lftc-lab1
+
+stitches/constants?: ch, sc, dc, hdc, trc, slst 
+reserved words: "SAME CHAIN", "FIRST"
+digits: 1, 2, 3, 4, ... && numbers
+
+
+identifiers 
+-a sequence of letters and  digits, such that the first character is a letter; the rule is: 
+    identifier ::= letter | letter{letter}{digit}     
+    letter ::= "A" | "B" | . ..| "Z" 
+    digit ::= "0" | "1" |...| "9"
+decllist ::= declaration | declaration ";" decllist 
+declaration ::= IDENTIFIER ":" type
+
+
+group: (),[]
+operators: next:= -> , multiplication:= *,  
+colors: hexa colors? these are constants i assume
+
+rows
+matrix?
+
+pattern
+data types: 
+-(stitch,color)
+-composed stich eg : bubbleStitch := (3*dc -> SAME CHAIN -> slst FIRST dc)
+
+stitch_name : stitch
+stitch_name = sc-red
+
+

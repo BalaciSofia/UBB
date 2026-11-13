@@ -1,0 +1,17 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -g
+
+lexer: lex.yy.c symtab.c symtab.h
+	$(CC) $(CFLAGS) -o lexer lex.yy.c symtab.c
+
+lex.yy.c: lexer.l
+	flex lexer.l
+
+test: lexer
+	mkdir -p out
+	./lexer tokens.txt tests/program1.txt out
+	./lexer tokens.txt tests/program2.txt out
+	./lexer tokens.txt tests/program3_errors.txt out || true
+
+clean:
+	rm -rf lexer lex.yy.c out

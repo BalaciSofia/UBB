@@ -108,3 +108,35 @@ venv/
 ############################
 semester 2/graphs/*/graph1m.txt
 semester 4/Web Programming/assg1/resources/*.mp4
+
+############################
+# Repository cleanup
+############################
+# third-party tools (not my code)
+semester1/asc/asm_tools/nasm/
+semester1/asc/asm_tools/npp/
+semester1/asc/asm_tools/ollydbg/
+
+# downloaded NuGet packages
+.nuget/
+.dotnet-home/
+
+# C++ build output
+build/
+cmake-build-*/
+
+# temporary files
+semester4/AI/lab9/data/tmp/
+
+# dataset downloaded automatically by torchvision
+semester4/AI/lab7/data/FashionMNIST/
+
+# generated program output
+semester5/ppd/*/output.txt
+
+# separate repositories (course organization)
+semester5/mobile/ma2026-project-idea-balacisofia/
+semester5/mobile/ma2026-ui-native-balacisofia/
+
+# ASP.NET local data-protection keys
+App_Data/Keys/

@@ -1,0 +1,4 @@
+problem number for lab 2
+
+problem 6
+the sieve of erathostenes
